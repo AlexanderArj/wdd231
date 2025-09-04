@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development I - Alexander Romero</title>
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development I - Alexander Romero - General information about the author and his studies">
+    <meta name="author" content="Alexander Romero">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <div class="flex-container">
+        <header>
+            <img src="images/network-analytic.svg" alt="Site logo" width="100" height="100">
+            <span>WDD 231 - Web Frontend Development I - Alexander Romero</span>
+            <button id="ham-btn" class="hamburger"></button>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Chamber Project</a>
+            <a href="#">Final Project</a>
+        </nav>
+        <main>
+            <h1>Home</h1>
+            <section class="card">
+                <h2>About me</h2>
+                <div class="about-me">
+                    <p>
+                        Hello my name is Alexander Romero, I was born in Venezuela
+                        and I am also Colombian nationalized on my mother's side.
+                        I have lived in both countries for a long time. Recently I moved to Brazil,
+                        with the intention of continuing my studies, learn Portuguese and get to know this beautiful
+                        country.
+                        I like programming very much, however it is something
+                        to which I must dedicate a lot of time to be able to perform well in the assignments.
+                        I like both the frontend and the backend.
+                        So far my favorite languages are C#, HTML and CSS.
+                    </p>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Student Photo</h2>
+                <img src="images/alexanderRomero-selfie.jpeg" alt="Picture of Alexander Romero-selfie in Av Paulista Brazil" id="selfie">
+            </section>
+            <section class="card">
+                <h2>Web Certificate Courses</h2>
+            </section>
+        </main>
+        <footer>
+            <div class="social-links">
+                <a href="https://github.com/AlexanderArj" target="_blank" rel="noopener noreferrer">
+                    <img src="images/github.svg" alt="Github author repositories"></a>
+                <a href="https://www.facebook.com/alexander.romero.125323" target="_blank" rel="noopener noreferrer">
+                    <img src="images/facebook.svg" alt="Facebook profile">
+                </a>
+                <a href="https://www.linkedin.com/in/alexander-romero-9989b229b" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+            <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
+            <p id="p-color">Last modification: <span id="lastmodification"></span></p>
+        </footer>
+    </div>
+</body>
+</html>
