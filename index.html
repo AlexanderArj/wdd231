@@ -7,13 +7,18 @@
     <meta name="description"
         content="WDD 231 - Web Frontend Development I - Alexander Romero - General information about the author and his studies">
     <meta name="author" content="Alexander Romero">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
 </head>
 
 <body>
@@ -23,11 +28,15 @@
             <span>WDD 231 - Web Frontend Development I - Alexander Romero</span>
             <button id="ham-btn" class="hamburger"></button>
         </header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Chamber Project</a>
-            <a href="#">Final Project</a>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
         </nav>
+        
         <main>
             <h1>Home</h1>
             <section class="card">

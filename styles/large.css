@@ -1,0 +1,30 @@
+
+@media screen and (min-width: 700px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+
+  header, main, nav, footer {
+    max-width: 1200px;
+  }
+
+  #selfie {
+    max-width: 350px;
+    height: auto;
+  }
+
+  body {
+    justify-content: center;
+  }
+
+}
