@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +17,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
 
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
@@ -36,7 +38,7 @@
                 <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
-        
+
         <main>
             <h1>Home</h1>
             <section class="card">
@@ -57,10 +59,17 @@
             </section>
             <section class="card">
                 <h2>Student Photo</h2>
-                <img src="images/alexanderRomero-selfie.jpeg" alt="Picture of Alexander Romero-selfie in Av Paulista Brazil" id="selfie">
+                <img src="images/alexanderRomero-selfie.jpeg"
+                    alt="Picture of Alexander Romero-selfie in Av Paulista Brazil" id="selfie">
             </section>
             <section class="card">
                 <h2>Web Certificate Courses</h2>
+                <div class="buttons">
+                    <button id="all-courses">All</button>
+                    <button id="wdd-courses">WDD</button>
+                    <button id="cse-courses">CSE</button>
+                    <div id="display-courses" class="courses"></div>
+                </div>
             </section>
         </main>
         <footer>
@@ -70,7 +79,8 @@
                 <a href="https://www.facebook.com/alexander.romero.125323" target="_blank" rel="noopener noreferrer">
                     <img src="images/facebook.svg" alt="Facebook profile">
                 </a>
-                <a href="https://www.linkedin.com/in/alexander-romero-9989b229b" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/alexander-romero-9989b229b" target="_blank"
+                    rel="noopener noreferrer">
                     <img src="images/linkedin.svg" alt="LinkedIn"></a>
             </div>
             <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
@@ -78,4 +88,5 @@
         </footer>
     </div>
 </body>
+
 </html>
