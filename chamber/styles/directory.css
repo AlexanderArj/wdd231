@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: #0D1B2A;
+    --dark-blue-2: #263342;
+    --medium-blue: #1B263B;
+    --light-blue: #415A77;
+    --light-blue-2: #778DA9;
+    --titles-color: #E0E1DD;
+    --text-color: #f3f5f8fc;
+    --text-color-on-white: black;
+    --nav-text-color: #ffffff;
+    --nav-text-color-hover: rgb(252, 165, 5);
+
+    --sec-bg: #dbdada;
+
+    --general-padding: 5px;
+    --secondary-padding: 3px;
+    --margins: 3px;
+    --border-r: 12px;
+}
+
+body {
+    padding: var(--general-padding);
+    margin: 5px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 700;
+    background-color: rgb(234, 234, 234);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    background-color: var(--dark-blue);
+    color: var(--titles-color);
+    padding: var(--general-padding);
+    justify-content: space-around;
+}
+
+header img {
+    display: block;
+    width: 40px;
+    height: auto;
+    margin: var(--margins);
+}
+
+header span {
+    text-align: center;
+    color: var(--titles-color);
+    align-self: center;
+    font-size: x-large;
+}
+
+/* Hamburger nav */
+
+.hamburger {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    align-self: center;
+    font-size: large;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2.5rem;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation.show li {
+    border-bottom: 1px solid var(--nav-text-color);
+}
+
+ul li {
+    list-style: none;
+}
+
+h1 {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+#p-color {
+    color: #FFF176;
+}
+
+.hero-image {
+    position: relative;
+}
+
+#keynote-tickets {
+    position: absolute;
+    display: flex;
+    justify-self: center;
+    bottom: 15px;
+    font-size: 1rem;
+    border-radius: var(--border-r);
+    padding: 10px 10px;
+    cursor: pointer;
+    color: var(--dark-blue);
+    font-family: "Noto Sans", sans-serif;
+    transition: background-color 0.8s ease, color 0.2s ease;
+    font-weight: bold;
+}
+
+#keynote-tickets:hover {
+    background-color: var(--nav-text-color-hover);
+    font-weight: bold;
+    color: var(--nav-text-color);
+}
+
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    justify-self: center;
+    background-color: var(--light-blue);
+    color: var(--text-color);
+    padding: var(--general-padding);
+    margin: var(--margins);
+    border-radius: var(--border-r);
+    border: 1px solid rgb(40, 37, 37);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: var(--general-padding);
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.current-weather {
+    display: flex;
+    gap: 30px;
+    background-color: var(--dark-blue-2);
+}
+
+.current-weather img {
+    width: 70px;
+    height: auto;
+    align-self: center;
+    background-color: var(--light-blue-2);
+    border-radius: var(--border-r);
+    padding: var(--general-padding);
+    margin-left: 5px;
+}
+
+.current-weather ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.current-weather ul li,
+.weather-forecast ul li {
+    line-height: 1.5;
+}
+
+#business-info section {
+    background-color: var(--sec-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    margin: 10px;
+    color: var(--dark-blue);
+    padding-top: 2px;
+}
+
+#business-info section div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+#business-info section div ul {
+    align-self: center;
+    line-height: 2.5;
+    text-align: left;
+    width: 60%;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: smaller;
+}
+
+#business-info section div ul li a {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+#business-info section div img {
+    margin-top: 15px;
+    border-radius: var(--border-r);
+    display: block;
+    width: 40%;
+}
+
+main p {
+    line-height: 1.7;
+    margin-top: 10px;
+    font-family: "Noto Sans", sans-serif;
+
+}
+
+h2 {
+    text-align: center;
+    background-color: var(--dark-blue-2);
+    border-radius: var(--border-r);
+    color: var(--titles-color);
+}
+
+nav {
+    background-color: var(--dark-blue-2);
+    display: flex;
+    flex-direction: column;
+    padding: var(--general-padding);
+    border-radius: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: var(--nav-text-color-hover);
+}
+
+nav li:hover {
+    cursor: pointer;
+    color: var(--nav-text-color-hover);
+    background-color: var(--dark-blue);
+}
+
+.social-links {
+    align-self: center;
+}
+
+.social-links img {
+    width: 50px;
+    height: auto;
+    margin: 5px 2px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: var(--dark-blue);
+    color: var(--text-color);
+    height: 50%;
+    gap: 20px;
+}
+
+.chamber-info, .copyright-modification {
+    line-height: 1.5;
+    margin: 10px 10px;
+}

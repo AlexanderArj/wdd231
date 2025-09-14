@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory - Av Paulista Chamber of Commerce</title>
+    <meta name="description" content="Directory page of Av. Paulista Chamber of Commerce">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Avenida Paulista - Chamber of Commerce">
+    <meta property="og:description"
+        content="Use the directory page of Av. Paulista Chamber of Commerce to get in contact with the most important businesses in Avenida Paulista, Sao Paulo.">
+    <meta property="og:url" content="https://alexanderarj.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://alexanderarj.github.io/wdd231/images/cropped-selfie.jpeg" />
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+
+
+</head>
+
+<body>
+    <div class="flex-container">
+        <header>
+            <img src="images/network-analytic.svg" alt="Site logo" width="100" height="100">
+            <span>Av. Paulista - Chamber Of Commerce</span>
+            <button id="ham-btn" class="hamburger"></button>
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+
+        <main>
+            <div class="hero-image">
+                <img src="images/hero-image.jpeg">
+                <button id="keynote-tickets">Keynote Tickets</button>
+            </div>
+
+            <h1>Home</h1>
+
+
+            <div class="cards-container">
+
+                <div class="info-cards">
+
+                    <section class="card">
+                        <h2>Events</h2>
+                        <div class="events">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas repellendus nihil
+                                fugit
+                                aliquid aspernatur, sequi hic atque aut eius deserunt.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <h2>Current Weather</h2>
+                        <div class="current-weather">
+                            <img src="images/cloud-sun.svg">
+                            <ul>
+                                <li>22° C</li>
+                                <li>Party Cloudy</li>
+                                <li>High: 27° C</li>
+                                <li>Low: 12° C</li>
+                                <li>Humidity: 60%</li>
+                                <li>Sunrise: 6:04 AM</li>
+                                <li>Sunset: 6:00 PM</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="card">
+                        <h2>Weather Forecast</h2>
+                        <div class="weather-forecast">
+                            <ul>
+                                <li>Today: 21° C</li>
+                                <li>Sunday: 24° C</li>
+                                <li>Monday: 26° C</li>
+                            </ul>
+                        </div>
+                    </section>
+
+
+                </div>
+
+                <div id="business-info"></div>
+
+            </div>
+
+
+        </main>
+        <footer>
+            <div class="chamber-info">
+                <h3>Avenida Paulista Chamber of Commerce</h3>
+                <ul>
+                    <li>12345 Avenida Paulista</li>
+                    <li>Sao Paulo, Brazil 01234</li>
+                    <li>info@avenidapchamber.org</li>
+                    <li>(123) 555-222-111</li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/AlexanderArj" target="_blank" rel="noopener noreferrer">
+                    <img src="images/github.svg" alt="Github author repositories"></a>
+                <a href="https://www.facebook.com/alexander.romero.125323" target="_blank" rel="noopener noreferrer">
+                    <img src="images/facebook.svg" alt="Facebook profile">
+                </a>
+                <a href="https://www.linkedin.com/in/alexander-romero-9989b229b" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+
+            <div class="copyright-modification">
+                <p>WDD 231 Class Project</p>
+                <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
+                <p id="p-color">Last modification: <span id="lastmodification"></span></p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
