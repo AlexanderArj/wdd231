@@ -14,29 +14,25 @@ const displayMembers = (members) => {
     members.forEach((member) => {
 
         let memberCard = document.createElement('section');
-        let name = document.createElement('h2');
+        let name = document.createElement('h3');
         let businessImage = document.createElement('img');
-        let phoneNumber = document.createElement('li');
-        let website = document.createElement('li');
+        let phoneNumber = document.createElement('p');
 
         let websiteLink = document.createElement('a');
 
-        let businessType = document.createElement('li');
-
-        let details = document.createElement('ul');
+        let businessType = document.createElement('p');
 
         let container = document.createElement('div');
+
+        let containerImg = document.createElement('div');
+
 
         name.textContent = `${member.name}`;
         phoneNumber.textContent = `Phone Number: ${member.phone_number}`;
 
-        website.appendChild(websiteLink);
-
         websiteLink.setAttribute('href', member.url);
 
         websiteLink.textContent = `Website: ${member.url}`;
-
-
 
         businessType.textContent = `Business Type: ${member.business_type}`;
 
@@ -46,16 +42,37 @@ const displayMembers = (members) => {
         businessImage.setAttribute('width', '340');
         businessImage.setAttribute('height', 'auto');
 
-        details.appendChild(phoneNumber);
-        details.appendChild(website);
-        details.appendChild(businessType);
+        container.appendChild(phoneNumber);
+        container.appendChild(websiteLink);
+        container.appendChild(businessType);
 
-        container.appendChild(businessImage);
-        container.appendChild(details);
+        containerImg.appendChild(businessImage);
 
+        containerImg.setAttribute('id', 'c-img');
+
+    
         memberCard.appendChild(name);
+        memberCard.appendChild(containerImg);
         memberCard.appendChild(container);
 
         memberCards.appendChild(memberCard);
     });
 };
+
+const gridbutton = document.querySelector('#grid');
+const listbutton = document.querySelector('#list');
+const display = document.querySelector('#business-info');
+
+
+gridbutton.addEventListener("click", () => {
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList);
+
+function showList() {
+	display.classList.add("list");
+}
+
+
+
