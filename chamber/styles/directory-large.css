@@ -98,11 +98,15 @@
 
    #sections.list section:nth-child(even){
     background-color: var(--dark-blue-2);
-    h3, a, p{
+  }
+
+  #sections.list section:nth-child(even) h3,
+  #sections.list section:nth-child(even) a,
+  #sections.list section:nth-child(even) p{
       color: #ffffff;
     }
-    
-  }
+
+
 
   #sections.list section img {
     display: none;
