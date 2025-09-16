@@ -4,13 +4,23 @@
   }
 
   .navigation {
-    display: block;
+    display: flex;
+    flex-direction: row;
   }
 
   .navigation ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    gap: 20px;
+    padding: 15px;
+  }
+
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between ;
+    background-color: var(--dark-blue);
   }
 
   .flex-container {
@@ -38,80 +48,7 @@
     height: auto;
   }
 
- 
 
-  .grid {
-    display: grid;
-	  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	  grid-gap: 5px;
-    align-items: stretch;
-  }
-
-
-  .list {
-    display: flex;
-	  flex-direction: column;
-  }
-
-  
-  #business-info.list section h2 {
-    font-size: 1.2em;
-  }
-
-  #business-info.list section img{
-    display: none;
-  }
-
-  #business-info.list #c-img {
-    display: none;
-  }
-
-  #business-info.list section {
-    margin: 0 auto;
-  }
-
-  #business-info.list section:nth-child(even){
-    background-color: var(--dark-blue);
-    color: white;
-  }
-
-  #business-info.list section:nth-child(even) a{
-    color: white;
-  }
-
-  #business-info.list section h3 {
-    grid-column: 1/2;
-    width: 60%;
-  }
-
-  #business-info.list section div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-    gap: 15px;
-    text-align: left;
-  }
-
-  header {
-    display: grid;
-    grid-template-columns: 40px 1fr 1fr;
-  }
-
-  header span {
-    text-align: left;
-    margin-left: 15px;
-  }
-
-
-  nav {
-    position: absolute;
-    right: 15%;
-    top: 25px;
-  }
-
-  nav a {
-    margin: 10px;
-  }
 
   footer {
     display: grid;
@@ -126,5 +63,55 @@
     align-content: center;
   }
 
+  /* estilos para las tarjetas en cuadricula y lista */
+
+  #sections  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    margin: 0 auto;
+
+  }
+
+  #sections section div {
+    font-size: small;
+  }
+
+  /* estilo lista */
+
+  #sections.list {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+
+  #sections.list section, #sections.list section div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #sections.list h3 {
+    border-style: none;
+    background-color: unset;
+    color: var(--dark-blue);
+  }
+
+   #sections.list section:nth-child(even){
+    background-color: var(--dark-blue-2);
+    h3, a, p{
+      color: #ffffff;
+    }
+    
+  }
+
+  #sections.list section img {
+    display: none;
+  }
+
+  #sections.list section div {
+    align-items: center;
+    gap: 12px;
+  }
+  
 
 }

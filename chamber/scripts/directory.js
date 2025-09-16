@@ -1,5 +1,5 @@
 const dataJson = './data/members.json';
-const memberCards = document.querySelector('#business-info');
+const memberCards = document.querySelector('#sections');
 
 async function getMemberData() {
     const response = await fetch(dataJson);
@@ -15,63 +15,58 @@ const displayMembers = (members) => {
 
         let memberCard = document.createElement('section');
         let name = document.createElement('h3');
-        let businessImage = document.createElement('img');
+        let image = document.createElement('img');
         let phoneNumber = document.createElement('p');
-
         let websiteLink = document.createElement('a');
-
-        let businessType = document.createElement('p');
+        let businessEmail = document.createElement('p');
 
         let container = document.createElement('div');
-
-        let containerImg = document.createElement('div');
-
 
         name.textContent = `${member.name}`;
         phoneNumber.textContent = `Phone Number: ${member.phone_number}`;
 
         websiteLink.setAttribute('href', member.url);
-
         websiteLink.textContent = `Website: ${member.url}`;
 
-        businessType.textContent = `Business Type: ${member.business_type}`;
+        businessEmail.textContent = `Email: ${member.email}`;
 
-        businessImage.setAttribute('src', member.image);
-        businessImage.setAttribute('alt', `Image of ${member.name}`);
-        businessImage.setAttribute('loading', 'lazy');
-        businessImage.setAttribute('width', '340');
-        businessImage.setAttribute('height', 'auto');
+
+        image.setAttribute('src', member.image);
+        image.setAttribute('alt', `Image of ${member.name}`);
+        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '340');
+        // todas las imagenes con un widht de 340
+        image.setAttribute('height', 'auto');
+
+
+        memberCard.appendChild(name);
+        memberCard.appendChild(image);
+        // correo de la empresa
+
+        container.appendChild(businessEmail);
 
         container.appendChild(phoneNumber);
         container.appendChild(websiteLink);
-        container.appendChild(businessType);
 
-        containerImg.appendChild(businessImage);
-
-        containerImg.setAttribute('id', 'c-img');
-
-    
-        memberCard.appendChild(name);
-        memberCard.appendChild(containerImg);
         memberCard.appendChild(container);
 
         memberCards.appendChild(memberCard);
     });
 };
 
-const gridbutton = document.querySelector('#grid');
-const listbutton = document.querySelector('#list');
-const display = document.querySelector('#business-info');
+const gridbutton = document.querySelector('#gridBtn');
+const listbutton = document.querySelector('#listBtn');
 
+// revisar esto, se declaran dos variables que toman al mimso id?
 
 gridbutton.addEventListener("click", () => {
-	display.classList.remove("list");
+	memberCards.classList.remove("list");
 });
 
 listbutton.addEventListener("click", showList);
 
 function showList() {
-	display.classList.add("list");
+	memberCards.classList.add("list");
 }
 
 
