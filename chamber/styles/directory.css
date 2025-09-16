@@ -266,14 +266,18 @@ footer {
     background-color: var(--sec-bg);
     color: var(--dark-blue);
     padding: var(--general-padding);
-    margin: var(--margins);
-
-    /* organizando dentro de cada seccion */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
-
+    margin: var(--margins);    
     border-radius: var(--border-r);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sections section img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
 }
 
 h3 {
@@ -282,34 +286,24 @@ h3 {
     margin-bottom: 15px;
     padding: var(--general-padding);
 
-    grid-column: 1/3;
-    grid-row: 1;
-
+  
     background-color: var(--dark-blue-2);
     color: var(--nav-text-color);
     border-radius: var(--border-r);
 }
 
-#sections section img {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    width: 100%;
-    align-self: center;
-
-    display: block;
-}
 
 #sections section div {
-    margin-left: 15px;
     padding: var(--general-padding);
 }
 
 #sections section div p {
     margin-bottom: 10px;
+    margin-left: 2px;
+    overflow-wrap: break-word;
 }
 
 #sections section div a {
     text-decoration: none;
     color: var(--dark-blue);
 }
-

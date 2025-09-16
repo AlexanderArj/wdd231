@@ -72,8 +72,31 @@
 
   }
 
+  #sections section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  h3 {
+    grid-column: 1/3;
+    grid-row: 1;
+
+  }
+
+  #sections section img {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+    align-self: center;
+    display: block;
+}
+
+
   #sections section div {
     font-size: small;
+    margin-left: 15px;
+
   }
 
   /* estilo lista */
@@ -88,6 +111,7 @@
   #sections.list section, #sections.list section div {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
 
   #sections.list h3 {
