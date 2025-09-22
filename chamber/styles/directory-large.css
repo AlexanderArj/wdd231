@@ -1,67 +1,4 @@
 @media screen and (min-width: 700px) {
-  .hamburger {
-    display: none;
-  }
-
-  .navigation {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .navigation ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    gap: 20px;
-    padding: 15px;
-  }
-
-
-  .header-nav {
-    display: flex;
-    justify-content: space-between ;
-    background-color: var(--dark-blue);
-  }
-
-  .flex-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .menu {
-    display: block;
-    justify-self: flex-end;
-    margin-bottom: 15px;
-  }
-
-  .menu button {
-    background-color: var(--light-blue);
-    border-style: none;
-  }
-
-  .menu button:hover {
-    cursor: pointer;
-  }
-
-  .menu img {
-    width: 25px;
-    height: auto;
-  }
-
-
-
-  footer {
-    display: grid;
-    grid-template-columns: 1fr 2fr auto;
-  }
-
-  .social-links {
-    margin: 0 auto;
-  }
-
-  .copyright-modification {
-    align-content: center;
-  }
 
   /* estilos para las tarjetas en cuadricula y lista */
 
@@ -141,5 +78,4 @@
     gap: 12px;
   }
   
-
 }
