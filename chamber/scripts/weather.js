@@ -1,3 +1,4 @@
+
 const myDescription = document.querySelector('#description');
 const myTemperature = document.querySelector('#temperature');
 const myGraphic = document.querySelector('#graphic');
@@ -7,7 +8,9 @@ const humidity = document.querySelector('#humidity');
 const sunrise = document.querySelector('#sunrise');
 const sunset = document.querySelector('#sunset');
 
-// -23.56, -46.66
+const todayTemp = document.querySelector('#today');
+const tomorrowTemp = document.querySelector('#tomorrow');
+const afterToTemp = document.querySelector('#after-tomorrow');
 
 const myKey = "d92b2c8eb358cd50f53302f1cb441cd6";
 const myLat = "-23.56";
@@ -15,45 +18,80 @@ const myLong = "-46.66";
 
 const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
 
-async function apiFetch() {
-    try {
-        const response = await fetch(myUrl);
-        if (response.ok) {
-            const data = await response.json();
-            // console.log(data); // testing only, para probar que la informacion se muestra correctamente desde el json. Lo 
-            // lo puedes ver en console al ispeccionar. Preferiblemente tratar de hacerlo en incognito y utilizar el codigo basico html y js necesario sin nada mas
-            console.log(data);
-            displayResults(data); // uncomment when ready
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
-}
+const forecastUrl = `//api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
 
 
 function formatTime(timestamp) {
-  const date = new Date(timestamp * 1000);
-  return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    const date = new Date(timestamp * 1000);
+    return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 }
 
-function displayResults (data){
+function displayResults(data, forecastData) {
     myDescription.innerHTML = data.weather[0].description;
-    myTemperature.innerHTML = `Temperature: ${data.main.temp} &degC`;
+    myTemperature.innerHTML = `Temperature: ${Math.round(data.main.temp)} &degC`;
 
-    maxTemp.innerHTML = `Max: ${data.main.temp_max} &degC`;
-    lowTemp.innerHTML = `Min: ${data.main.temp_min} &degC`;
+    maxTemp.innerHTML = `Max: ${Math.round(data.main.temp_max)} &degC`;
+    lowTemp.innerHTML = `Min: ${Math.round(data.main.temp_min)} &degC`;
     humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
 
     sunrise.innerHTML = `Sunrise: ${formatTime(data.sys.sunrise)}`;
     sunset.innerHTML = `Sunset: ${formatTime(data.sys.sunset)}`;
 
-
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     myGraphic.setAttribute('src', iconsrc);
     myGraphic.setAttribute('alt', data.weather[0].description);
-    
+
+    function getDayName(daysToAdd) {
+        const now = Date.now();
+
+        const msToAdd = daysToAdd * 24 * 60 * 60 * 1000;
+        const futureDate = new Date(now + msToAdd);
+
+        return futureDate.toLocaleDateString('en-EN', { weekday: 'long' }); }
+
+
+    if (forecastData) {
+
+        todayTemp.innerHTML = `Today: ${Math.round(forecastData.list[0].main.temp)}`;
+
+        const tomorrowName = getDayName(1);
+
+        tomorrowTemp.innerHTML = `${tomorrowName}: ${Math.round(forecastData.list[4].main.temp)} &degC`;
+
+        const afterTomorrowName = getDayName(2);
+        afterToTemp.innerHTML = `${afterTomorrowName}: ${Math.round(forecastData.list[12].main.temp)} &degC`;
+    }
+
+}
+
+async function apiFetch() {
+    try {
+        const [response, responseF] = await Promise.all([
+            fetch(myUrl),
+            fetch(forecastUrl)
+        ]);
+
+        let data = null;
+        if (response.ok) {
+            data = await response.json();
+            console.log("Weather data:", data);
+        } else {
+            throw new Error(`Error: ${response.status} - ${await response.text()}`);
+        }
+
+        let dataF = null;
+        if (responseF.ok) {
+            dataF = await responseF.json();
+            console.log("Forecast data:", dataF);
+        } else {
+            throw new Error(`Error: ${responseF.status} - ${await responseF.text()}`);
+        }
+
+        displayResults(data, dataF);
+
+    } catch (error) {
+        console.error(error);
+    }
 }
 
 apiFetch();
