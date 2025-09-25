@@ -1,4 +1,4 @@
-import { getMemberData } from "./data.mjs";
+import { getData } from "./data.mjs";
 import { displayMembers } from "./display.mjs";
 import { viewMode } from "./view.mjs";
 import { getRandomFilteredMembers } from "./filtered.mjs";
@@ -8,7 +8,7 @@ async function directory() {
     const spotlights = document.querySelector('#spotlights');
 
     if (sections) {
-        const members = await getMemberData();
+        const members = await getData();
         displayMembers(members, '#sections');
         viewMode();
     } 

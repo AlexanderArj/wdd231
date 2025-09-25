@@ -7,7 +7,7 @@
             "url": "https://masp.org.br",
             "urldescription": "https://masp.org.br",
             "image": "https://cdn.prod.website-files.com/67338a991d8aa120d15ef8c5/673b7e5f6ed39dae0217cb42_Wordmark%20%E2%80%93%20Red.svg",
-            "membership_level": 3,
+            "membership_level": "Gold",
             "business_type": "Museum",
             "hours": "Tuesday to Sunday, 10:00 AM to 6:00 PM (Thursdays until 8:00 PM)",
             "email": "contacto@masp.org.br"
@@ -18,7 +18,7 @@
             "phone_number": "+55 11 3595-1230",
             "url": "https://shoppingcidadesp.com.br",
             "image": "./images/shopping.jpg",
-            "membership_level": 2,
+            "membership_level": "Silver",
             "business_type": "Shopping Mall",
             "hours": "Monday to Saturday, 10:00 AM to 10:00 PM; Sundays and holidays, 2:00 PM to 8:00 PM",
             "email": "informacion@shoppingcidadesp.com.br"
@@ -29,7 +29,7 @@
             "phone_number": "+55 11 3179-7600",
             "url": "https://conjuntonacional.com.br",
             "image": "./images/conjunto-nacional.jpg",
-            "membership_level": 3,
+            "membership_level": "Bronze",
             "business_type": "Shopping/Cultural Center",
             "hours": "Monday to Saturday, 9:00 AM to 10:00 PM; Sundays and holidays, 10:00 AM to 8:00 PM",
             "email": "contacto@conjuntonacional.com.br"
@@ -40,7 +40,7 @@
             "phone_number": "+55 11 2168-1777",
             "url": "https://itaucultural.org.br",
             "image": "https://www.itaucultural.org.br/header-logo.svg",
-            "membership_level": 3,
+            "membership_level": "Gold",
             "business_type": "Cultural Center",
             "hours": "Tuesday to Saturday, 11:00 AM to 8:00 PM; Sundays and holidays, 11:00 AM to 7:00 PM",
             "email": "info@itaucultural.org.br"
@@ -51,7 +51,7 @@
             "phone_number": "+55 11 3285-6986",
             "url": "https://casadasrosas.org.br",
             "image": "https://casadasrosas.org.br/wp-content/uploads/2024/10/Frame-802-1-1.jpg",
-            "membership_level": 1,
+            "membership_level": "Bronze",
             "business_type": "Cultural Space",
             "hours": "Tuesday to Saturday, 10:00 AM to 10:00 PM; Sundays and holidays, 10:00 AM to 6:00 PM",
             "email": "contacto@casadasrosas.org.br"
@@ -62,7 +62,7 @@
             "phone_number": "+55 11 3170-4033",
             "url": "https://www.livrariacultura.com.br/",
             "image": "https://livrariacultura.vteximg.com.br/arquivos/wPeao_VOZESFEMININAS.jpg?v=638866498680030000",
-            "membership_level": 2,
+            "membership_level": "Silver",
             "business_type": "Bookstore",
             "hours": "Monday to Saturday, 9:00 AM to 10:00 PM; Sundays, 10:00 AM to 8:00 PM",
             "email": "atendimento@livrariacultura.com.br"
@@ -73,7 +73,7 @@
             "phone_number": "+55 11 3149-5959",
             "url": "https://japanhousesp.com.br",
             "image": "https://japanhousesp.com.br/wp-content/themes/jhsp/imagens/japan-house-sp.svg",
-            "membership_level": 3,
+            "membership_level": "Gold",
             "business_type": "Cultural Center",
             "hours": "Tuesday to Sunday, 10:00 AM to 8:00 PM",
             "email": "info@japanhousesp.com.br"
