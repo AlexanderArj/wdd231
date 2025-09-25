@@ -39,6 +39,7 @@ function displayResults(data, forecastData) {
 
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     myGraphic.setAttribute('src', iconsrc);
+    myGraphic.setAttribute('alt', data.weather[0].description);
 
     function getDayName(daysToAdd) {
         const now = Date.now();
