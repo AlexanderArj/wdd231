@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Av. Paulista Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/join.css">
+  <link rel="stylesheet" href="styles/thankyou.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+  <div class="header-nav">
+    <header>
+      <img src="images/network-analytic.svg" alt="Site logo" width="100" height="100">
+      <span>Av. Paulista - Chamber Of Commerce</span>
+      <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="#">Discover</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main class="confirmation-container">
+    <h1>Thank You! ✅</h1>
+    <p>Your membership application has been successfully submitted. We've received the following information:</p>
+    <hr>
+    <div class="confirmation-details">
+      <h2>Confirmation Details</h2>
+      <p><strong>First Name:</strong> <span id="firstNameDisplay"></span></p>
+      <p><strong>Last Name:</strong> <span id="lastNameDisplay"></span></p>
+      <p><strong>Email Address:</strong> <span id="emailDisplay"></span></p>
+      <p><strong>Mobile Phone:</strong> <span id="phoneDisplay"></span></p>
+      <p><strong>Business Name:</strong> <span id="organizationDisplay"></span></p>
+      <p><strong>Submission Time:</strong> <span id="timestampDisplay"></span></p>
+    </div>
+  </main>
+  <footer>
+    <div class="chamber-info">
+      <h4>Avenida Paulista Chamber of Commerce</h4>
+      <ul>
+        <li>12345 Avenida Paulista</li>
+        <li>Sao Paulo, Brazil 01234</li>
+        <li>info@avenidapchamber.org</li>
+        <li>(123) 555-222-111</li>
+      </ul>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/AlexanderArj" target="_blank" rel="noopener noreferrer">
+        <img src="images/github.svg" alt="Github author repositories">
+      </a>
+      <a href="https://www.facebook.com/alexander.romero.125323" target="_blank" rel="noopener noreferrer">
+        <img src="images/facebook.svg" alt="Facebook profile">
+      </a>
+      <a href="https://www.linkedin.com/in/alexander-romero-9989b229b" target="_blank" rel="noopener noreferrer">
+        <img src="images/linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
+    <div class="copyright-modification">
+      <p>WDD 231 Class Project</p>
+      <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
+      <p id="p-color">Last modification: <span id="lastmodification"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
