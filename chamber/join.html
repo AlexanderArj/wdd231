@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <meta property="og:title" content="Avenida Paulista - Chamber of Commerce">
+    <meta property="og:description"
+        content="Be a member of one of the most important businesses asociation in Sao Paulo Brazil">
+    <meta property="og:url" content="https://alexanderarj.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://alexanderarj.github.io/wdd231/chamber/images/hero-image.jpeg">
+
     <title>Join Us - Av. Paulista Chamber of Commerce</title>
     <meta name="description" content="Join the Avenida Paulista Chamber of Commerce">
     <meta name="author" content="Alexander Romero">
@@ -19,137 +26,126 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/join.js" defer></script>
-
-
-
 </head>
 <body>
-
-      <div class="header-nav">
-            <header>
+    <div class="header-nav">
+        <header>
             <img src="images/network-analytic.svg" alt="Site logo" width="100" height="100">
             <span>Av. Paulista - Chamber Of Commerce</span>
             <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
-            </header>
-            
-            
-            <nav id="nav-bar" class="navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="#">Discover</a></li>
-                </ul>
-            </nav>
-        </div>
-    
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
-
-        <form action="thankyou.html" method="get">
-            <fieldset>
-                <legend>Applicant and Business Information</legend>
-                <label>
-                    Applicant's First Name:
-                    <input type="text" name="first_name" title="Enter your first name." required autocomplete="given-name" placeholder="e.g., Jane">
-                </label>
-                <br><br>
-                <label>
-                    Applicant's Last Name:
-                    <input type="text" name="last_name" title="Enter your last name." required autocomplete="family-name" placeholder="e.g., Doe">
-                </label>
-                <br><br>
-                <label>
-                    Organizational Title:
-                    <input type="text" name="org_title" title="Enter your job title (minimum 7 characters, only letters, spaces, and hyphens)." autocomplete="organization-title" pattern="[a-zA-Z\s\-]{7,}" placeholder="e.g., Marketing Director">
-                </label>
-                <br><br>
-                <label>
-                    Email Address:
-                    <input type="email" name="email" title="Enter your email address." required autocomplete="email" placeholder="example@company.com">
-                </label>
-                <br><br>
-                <label>
-                    Mobile Phone Number:
-                    <input type="tel" name="phone" title="Please enter a number in the format (XX) XXXXX-XXXX." required autocomplete="tel" placeholder="(21) 98765-4321" pattern="\([0-9]{2}\)\s[0-9]{5}-[0-9]{4}">
-                </label>
-                <br><br>
-                <label>
-                    Business/Organization Name:
-                    <input type="text" name="organization" title="Enter the full name of your business or organization." required autocomplete="organization" placeholder="e.g., Innovatech Solutions Inc.">
-                </label>
-                <br><br>
-                <label>
-                    Business/Organization Description:
-                    <textarea name="description" title="Provide a brief description of your business or organization." placeholder="Briefly describe your business, its mission, and the services you offer..."></textarea>
-                </label>
-                <br><br>
-            </fieldset>
-            <fieldset>
-                <legend>Select Your Membership Level</legend>
-                <label>
-                    <input type="radio" name="membership_level" value="np" checked> 
-                    NP Membership (for non-profit organizations, no fee)
-                </label>
+        <h1>Become a member of Av. Paulista Chamber Of Commerce!</h1>
+        <section class="main">
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Applicant and Business Information</legend>
+                    <label>
+                        Applicant's First Name:
+                        <input type="text" name="first_name" title="Enter your first name." required autocomplete="given-name" placeholder="e.g., Jane">
+                    </label>
+                    <br><br>
+                    <label>
+                        Applicant's Last Name:
+                        <input type="text" name="last_name" title="Enter your last name." required autocomplete="family-name" placeholder="e.g., Doe">
+                    </label>
+                    <br><br>
+                    <label>
+                        Organizational Title:
+                        <input type="text" name="org_title" title="Enter your job title (minimum 7 characters, only letters, spaces, and hyphens)." autocomplete="organization-title" pattern="[a-zA-Z\s\-]{7,}" placeholder="e.g., Marketing Director">
+                    </label>
+                    <br><br>
+                    <label>
+                        Email Address:
+                        <input type="email" name="email" title="Enter your email address." required autocomplete="email" placeholder="example@company.com">
+                    </label>
+                    <br><br>
+                    <label>
+                        Mobile Phone Number:
+                        <input type="tel" name="phone" title="Please enter a number in the format (XX) XXXXX-XXXX." required autocomplete="tel" placeholder="(21) 98765-4321" pattern="\([0-9]{2}\)\s[0-9]{5}-[0-9]{4}">
+                    </label>
+                    <br><br>
+                    <label>
+                        Business/Organization Name:
+                        <input type="text" name="organization" title="Enter the full name of your business or organization." required autocomplete="organization" placeholder="e.g., Innovatech Solutions Inc.">
+                    </label>
+                    <br><br>
+                    <label>
+                        Business/Organization Description:
+                        <textarea name="description" title="Provide a brief description of your business or organization." placeholder="Briefly describe your business, its mission, and the services you offer..."></textarea>
+                    </label>
+                    <br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Select Your Membership Level</legend>
+                    <label>
+                        <input type="radio" name="membership_level" value="np" checked> 
+                        NP Membership (for non-profit organizations, no fee)
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="membership_level" value="bronze"> 
+                        Bronze Membership
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="membership_level" value="silver"> 
+                        Silver Membership
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="membership_level" value="gold"> 
+                        Gold Membership
+                    </label>
+                </fieldset>
                 <br>
-                <label>
-                    <input type="radio" name="membership_level" value="bronze"> 
-                    Bronze Membership
-                </label>
-                <br>
-                <label>
-                    <input type="radio" name="membership_level" value="silver"> 
-                    Silver Membership
-                </label>
-                <br>
-                <label>
-                    <input type="radio" name="membership_level" value="gold"> 
-                    Gold Membership
-                </label>
-            </fieldset>
-            <br>
-            <input type="hidden" id="timestamp" name="timestamp">
-            <input type="submit" value="Submit Application">
-        </form>
-
-        
-        
-        <div class="container">
-            <div id="plans-container" class="plans-grid"></div>
-        </div>
-
-        <dialog id="benefits-modal">
-            <div id="modal-content"></div>
-            <button id="close-modal-btn">Close</button>
-        </dialog>
-
-
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Submit Application">
+            </form>
+            <div class="container">
+                <div id="plans-container" class="plans-grid"></div>
+            </div>
+            <dialog id="benefits-modal">
+                <div id="modal-content"></div>
+                <button id="close-modal-btn">Close</button>
+            </dialog>
+        </section>
     </main>
-   <footer>
-            <div class="chamber-info">
-                <h4>Avenida Paulista Chamber of Commerce</h4>
-                <ul>
-                    <li>12345 Avenida Paulista</li>
-                    <li>Sao Paulo, Brazil 01234</li>
-                    <li>info@avenidapchamber.org</li>
-                    <li>(123) 555-222-111</li>
-                </ul>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com/AlexanderArj" target="_blank" rel="noopener noreferrer">
-                    <img src="images/github.svg" alt="Github author repositories">
-                </a>
-                <a href="https://www.facebook.com/alexander.romero.125323" target="_blank" rel="noopener noreferrer">
-                    <img src="images/facebook.svg" alt="Facebook profile">
-                </a>
-                <a href="https://www.linkedin.com/in/alexander-romero-9989b229b" target="_blank" rel="noopener noreferrer">
-                    <img src="images/linkedin.svg" alt="LinkedIn">
-                </a>
-            </div>
-            <div class="copyright-modification">
-                <p>WDD 231 Class Project</p>
-                <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
-                <p id="p-color">Last modification: <span id="lastmodification"></span></p>
-            </div>
-        </footer>
+    <footer>
+        <div class="chamber-info">
+            <h4>Avenida Paulista Chamber of Commerce</h4>
+            <ul>
+                <li>12345 Avenida Paulista</li>
+                <li>Sao Paulo, Brazil 01234</li>
+                <li>info@avenidapchamber.org</li>
+                <li>(123) 555-222-111</li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/AlexanderArj" target="_blank" rel="noopener noreferrer">
+                <img src="images/github.svg" alt="Github author repositories">
+            </a>
+            <a href="https://www.facebook.com/alexander.romero.125323" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook.svg" alt="Facebook profile">
+            </a>
+            <a href="https://www.linkedin.com/in/alexander-romero-9989b229b" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="copyright-modification">
+            <p>WDD 231 Class Project</p>
+            <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
+            <p id="p-color">Last modification: <span id="lastmodification"></span></p>
+        </div>
+    </footer>
 </body>
 </html>
