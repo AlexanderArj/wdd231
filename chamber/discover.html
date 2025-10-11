@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avenida Paulista Chamber of Commerce</title>
-    <meta name="description" content="Home page of Av. Paulista Chamber of Commerce">
+    <title>Discover - Av. Paulista Chamber of Commerce</title>
+    <meta name="description" content="Discover page of Av. Paulista Chamber of Commerce">
     <meta name="author" content="Alexander Romero">
 
     <link rel="icon" href="images/favicon.ico">
 
     <!--   -->
 
-    <meta property="og:title" content="Avenida Paulista - Chamber of Commerce">
+    <meta property="og:title" content="Discover - Av. Paulista Chamber of Commerce">
     <meta property="og:description"
-        content="Get to know one of the most important businesses asociation in Sao Paulo Brazil">
-    <meta property="og:url" content="https://alexanderarj.github.io/wdd231/chamber/index.html">
+        content="Get to know some of the most interesting places in Sao Paulo, Brazil.">
+    <meta property="og:url" content="https://alexanderarj.github.io/wdd231/chamber/discover.html">
     <meta property="og:image" content="https://alexanderarj.github.io/wdd231/chamber/images/hero-image.jpeg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,14 +25,13 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    
-    <script src="scripts/weather.js" defer></script>
-    
+    <link rel="stylesheet" href="styles/discover.css">
+
+
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script type="module" src="scripts/directory.js"></script>
 
-
+    <script src="scripts/discover.js" type="module"></script>
 
 </head>
 <body>
@@ -58,52 +57,8 @@
 
 
         <main>
-            <div class="hero-image">
-                <img src="images/hero-image.jpeg" alt="Av. Paulista and people in a business meeting">
-                <button id="keynote-tickets">Join Us</button>
-            </div>
-
-            <h1>Home</h1>
-
-            <section class="card">
-                <h2>Events</h2>
-                <div class="events">
-                    <p>
-                    </p>
-                </div>
-            </section>
-
-            <section class="card">
-                <h2>Current Weather</h2>
-
-                <div class="weather">
-                    <img id="graphic" src="images/cloud-sun.svg" alt="Weather Icon">
-                    <ul>
-                        <li id="temperature"></li>
-                        <li id="description"></li>
-                        <li id="max"></li>
-                        <li id="low"></li>
-                        <li id="humidity"></li>
-                        <li id="sunrise"></li>
-                        <li id="sunset"></li>
-                    </ul>
-                </div>
-
-            </section>
-
-            <section class="card">
-                <h2>Weather Forecast</h2>
-                <div class="forecast">
-                    <ul>
-                        <li id="today"></li>
-                        <li id="tomorrow"></li>
-                        <li id="after-tomorrow"></li>
-                    </ul>
-                </div>
-            </section>
-
-            <div id="spotlights"></div>
-
+            <h1>Amazing Places in São Paulo</h1>
+            <div id="places-container"></div>
         </main>
 
         <footer>

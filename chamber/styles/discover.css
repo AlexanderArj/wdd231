@@ -1,0 +1,146 @@
+#places-container {
+    display: grid;
+    gap: 25px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.text-content .description {
+    font-size: 1rem;
+    color: #4b4f56;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+}
+
+.text-content .address {
+    font-style: italic;
+    font-size: 0.85rem;
+    color: #606770;
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+    #places-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .text-content {
+        display: grid;
+        grid-template-areas:
+            "image"
+            "title"
+            "text"
+            "location";
+        gap: 10px;
+    }
+
+    .text-content img {
+        grid-area: image;
+    }
+    
+    .text-content h3 {
+        grid-area: title;
+    }
+    .text-content .description {
+        grid-area: text;
+    }
+    .text-content .address {
+        grid-area: location;
+        align-self: end;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    #places-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-content {
+        display: grid;
+        height: 100%;
+        grid-template-areas:
+            "image      title"
+            "location   text"
+            "link       link";
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+    }
+
+    .text-content img {
+        grid-area: image;
+    }
+
+    .text-content h3 {
+        grid-area: title;
+        align-self: flex-start;
+        background-color: yellow;
+    }
+    .text-content .description {
+        grid-area: text;
+    }
+
+    .text-content .address {
+        grid-area: location;
+        text-align: left;
+        align-self: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    #places-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .text-content {
+        display: grid;
+        height: 100%;
+        grid-template-areas:
+            "title    location"
+            "text     text";
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 3fr 1fr;
+        gap: 10px 20px;
+    }
+
+    .text-content h3 {
+        grid-area: title;
+        align-self: center;
+    }
+
+    .description {
+        grid-area: text;
+    }
+    
+    .address {
+        grid-area: location;
+        text-align: right;
+        font-size: 0.8rem;
+        align-self: center;
+    }
+}

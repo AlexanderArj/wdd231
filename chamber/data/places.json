@@ -1,0 +1,74 @@
+{
+    "places": [
+        {
+            "name": "Mercado Municipal de São Paulo",
+            "address": "R. Cantareira, 306 - Centro Histórico de São Paulo, São Paulo - SP, 01024-900, Brazil",
+            "image": "./images/mercado.webp",
+            "description": "The Municipal Market of São Paulo, known as Mercadão, is a vibrant center of culinary delights and a testament to the city's rich cultural diversity.",
+            "url" : "https://www.mercadomunicipalsp.com/"
+        },
+        {
+            "name": "Ibirapuera Park",
+            "address": "Av. Pedro Álvares Cabral - Vila Mariana, São Paulo - SP, 04094-050, Brazil",
+            "image": "./images/ibipark.webp",
+            "description": "Ibirapuera Park, often considered the Central Park of São Paulo, is an extensive urban oasis that combines natural beauty, cultural spaces, and recreational activities.",
+            "url":"https://www.parquedoibirapuera.org/"
+        },
+        {
+            "name": "São Paulo Museum of Art (MASP)",
+            "address": "Avenida Paulista, 1578 - Bela Vista, São Paulo - SP, 01310-200, Brazil",
+            "image": "./images/masp.webp",
+            "description": "MASP is known for its concrete and glass structure. It houses one of the most important collections of European art in the Southern Hemisphere.",
+            "url":"https://www.masp.com.br/"
+        },
+        {
+            "name": "Catedral da Sé",
+            "address": "Praça da Sé, s/n - Sé, São Paulo - SP, 01001-000, Brazil",
+            "image": "./images/catedralse.webp",
+            "description": "Neogothic in style, the current cathedral began construction in 1913 and is one of the largest churches in Brazil, a historical landmark of the city.",
+            "url":"https://arquisp.org.br/catedral-da-se/"
+        },
+        {
+            "name": "Avenida Paulista",
+            "address": "Av. Paulista - Bela Vista, São Paulo - SP, Brazil",
+            "image": "./images/avenidap.webp",
+            "description": "It is the financial and cultural center of the metropolis. On Sundays, it transforms into a large pedestrian avenue with artists and activities.",
+            "url":"https://pt.wikipedia.org/wiki/Avenida_Paulista"
+        },
+        {
+            "name": "Pinacoteca do Estado",
+            "address": "Praça da Luz, 2 - Luz, São Paulo - SP, 01120-010, Brazil",
+            "image": "./images/pinacoteca.webp",
+            "description": "It is the oldest art museum in the city, with a vast collection of Brazilian art in an impressively architected building.",
+            "url":"https://pinacoteca.org.br/"
+        },
+        {
+            "name": "Football Museum (Museu do Futebol)",
+            "address": "Praça Charles Miller, s/n - Pacaembu, São Paulo - SP, 01234-010, Brazil",
+            "image": "./images/futbol.webp",
+            "description": "Located in the Pacaembu stadium, this interactive museum explores Brazil's profound connection to football through its history and culture.",
+            "url": "https://museudofutebol.org.br/"
+        },
+        {
+            "name": "São Paulo Municipal Theatre (Theatro Municipal de São Paulo)",
+            "address": "Praça Ramos de Azevedo, s/n - República, São Paulo - SP, 01031-010, Brazil",
+            "image": "./images/teatromunicipal.webp",
+            "description": "Inspired by the Paris Opera, it is one of the city's most important performance venues, featuring a blend of Art Nouveau and Renaissance styles.",
+            "url": "https://theatromunicipal.org.br/"
+        },
+        {
+            "name": "Batman's Alley (Beco do Batman)",
+            "address": "R. Medeiros de Albuquerque, 82-154 - Vila Madalena, São Paulo - SP, Brazil",
+            "image": "./images/batman.webp",
+            "description": "An open-air graffiti museum in the bohemian neighborhood of Vila Madalena. Its walls constantly change with new urban art pieces.",
+            "url":"https://www.melhoresdestinos.com.br/beco-do-batman-sao-paulo.html"
+        },
+        {
+            "name": "Liberdade Neighborhood (Bairro da Liberdade)",
+            "address": "Bairro da Liberdade, São Paulo - SP, Brazil",
+            "image": "./images/liberdade.webp",
+            "description": "São Paulo's colorful Asian district, with a strong Japanese influence. Ideal for enjoying its gastronomy, shops, and weekend fairs.",
+            "url":"https://pt.wikipedia.org/wiki/Liberdade_(bairro_de_S%C3%A3o_Paulo)"
+        }
+    ]
+}
