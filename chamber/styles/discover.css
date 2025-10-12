@@ -89,6 +89,8 @@ footer {
     grid-area: message;
     justify-self: center;
     margin-top: 10px;
+    margin-left: 5px;
+    color: #FFF176;
 }
 
 .chamber-info {
