@@ -13,6 +13,7 @@ section {
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* max-height: 350px; */
 }
 
 section:hover {
@@ -24,6 +25,7 @@ section img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: var(--border-r);
 }
 
 .text-content {
@@ -42,6 +44,38 @@ section img {
     font-style: italic;
     font-size: 0.85rem;
     color: #606770;
+}
+
+.text-content button {
+    background-color: var(--light-blue);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-top: var(--margins);
+    border: none;
+    border-radius: var(--border-r);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+    justify-self: center;
+    align-self: center;
+}
+
+.text-content button a {
+    color: var(--nav-text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.text-content button:hover {
+    background-color: var(--light-blue-2);
+    color: var(--dark-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-content button:active {
+    background-color: var(--medium-blue);
+    transform: translateY(0);
 }
 
 @media (min-width: 320px) and (max-width: 640px) {
@@ -85,10 +119,13 @@ section img {
         display: grid;
         height: 100%;
         grid-template-areas:
-            "image      title"
-            "location   text"
-            "link       link";
-        grid-template-columns: 2fr 1fr;
+            "title      text"
+            "image   location"
+            "btn       ."
+        ;
+
+        grid-template-rows: 50px auto auto;
+
         gap: 15px;
     }
 
@@ -99,7 +136,6 @@ section img {
     .text-content h3 {
         grid-area: title;
         align-self: flex-start;
-        background-color: yellow;
     }
     .text-content .description {
         grid-area: text;
@@ -109,6 +145,10 @@ section img {
         grid-area: location;
         text-align: left;
         align-self: center;
+    }
+
+    .text-content button {
+        grid-area: btn;
     }
 }
 
@@ -121,8 +161,11 @@ section img {
         display: grid;
         height: 100%;
         grid-template-areas:
-            "title    location"
-            "text     text";
+            "image  title"
+            "image  location"
+            "text  link";
+
+
         grid-template-rows: auto 1fr;
         grid-template-columns: 3fr 1fr;
         gap: 10px 20px;
@@ -143,4 +186,14 @@ section img {
         font-size: 0.8rem;
         align-self: center;
     }
+
+    .text-content img {
+        grid-area: image;
+    }
+
+    .text-content button {
+        grid-area: link;
+    }
+
+        
 }

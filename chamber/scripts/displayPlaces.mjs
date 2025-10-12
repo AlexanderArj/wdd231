@@ -12,6 +12,8 @@ export function displayPlaces(places, selector) {
         let websiteLink = document.createElement('a');
         let container = document.createElement('div');
 
+        let btn = document.createElement('button');
+
 
         name.textContent = place.name;
 
@@ -30,6 +32,8 @@ export function displayPlaces(places, selector) {
         websiteLink.setAttribute('href', place.url);
         websiteLink.textContent = `See More`;
 
+        btn.appendChild(websiteLink);
+
 
         container.classList.add('text-content');
 
@@ -38,7 +42,7 @@ export function displayPlaces(places, selector) {
         // placeCard.appendChild(descriptionP);
         container.appendChild(descriptionP);
         container.appendChild(addressP);
-        container.appendChild(websiteLink);
+        container.appendChild(btn);
         // placeCard.appendChild(websiteLink);
 
         container.appendChild(image);
