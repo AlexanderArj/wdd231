@@ -118,17 +118,20 @@ h1 {
     position: absolute;
     display: flex;
     justify-self: flex-end;
-    font-size: 1rem;
     border-radius: var(--border-r);
     padding: 10px 10px;
     cursor: pointer;
-    color: var(--dark-blue);
-    font-family: "Noto Sans", sans-serif;
     transition: background-color 0.8s ease, color 0.2s ease;
     font-weight: bold;
     right: 25%;
     bottom: 2px;
+}
 
+#keynote-tickets a{
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--dark-blue);
+  font-family: "Noto Sans", sans-serif;
 }
 
 #keynote-tickets:hover {
