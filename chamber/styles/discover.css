@@ -78,6 +78,32 @@ section img {
     transform: translateY(0);
 }
 
+footer {
+    grid-template-areas: 
+    ". message ."
+    "info social class";
+}
+
+#message {
+    grid-area: message;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.chamber-info {
+    grid-area: info;
+}
+
+.social-links {
+    grid-area: social;
+}
+
+.copyright-modification {
+    grid-area: class;
+}
+
+
+
 @media (min-width: 320px) and (max-width: 640px) {
     #places-container {
         grid-template-columns: 1fr;

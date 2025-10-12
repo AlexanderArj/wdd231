@@ -102,8 +102,12 @@ h1 {
     font-size: 1.5rem;
 }
 
-#p-color {
+#p-color, #message {
     color: #FFF176;
+}
+
+#message {
+  margin-left: 10px;
 }
 
 .hero-image {
