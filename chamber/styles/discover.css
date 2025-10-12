@@ -3,6 +3,7 @@
     gap: 25px;
     max-width: 1400px;
     margin: auto;
+    min-height: 1500px;
 }
 
 section {
