@@ -27,6 +27,7 @@ section img {
     height: auto;
     object-fit: cover;
     border-radius: var(--border-r);
+    min-height: 200px;
 }
 
 .text-content {
