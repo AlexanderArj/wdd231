@@ -11,8 +11,7 @@
     <link rel="icon" href="images/favicon.ico">
 
     <meta property="og:title" content="Sampa Guide">
-    <meta property="og:description"
-        content="Get to know Sao Paulo Brazil with us!">
+    <meta property="og:description" content="Get to know Sao Paulo Brazil with us!">
     <meta property="og:url" content="https://alexanderarj.github.io/wdd231/project/index.html">
     <meta property="og:image" content="https://alexanderarj.github.io/wdd231/project/images/sampa-hero.png">
 
@@ -20,88 +19,77 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
-
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/galeria.css">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/galeria.js" defer></script>
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-
-
 </head>
 
 <body>
-    <div class="grid-container">
+    <div class="main-container">
         <header>
             <figure>
-                    <a href="index.html">
-                        <img src="images/logo.png" width="75" alt="Logo" loading="lazy">
-                    </a>
+                <a href="index.html">
+                    <img src="images/logo.png" width="75" alt="Logo" loading="lazy">
+                </a>
             </figure>
-
             <h1 id="title">Sampa Guide</h1>
             <p>Enjoy Sao Paulo, Brazil!</p>
-
         </header>
-        
+
         <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        <img src="images/sampa-hero.png" id="hero-image" alt="A collage of places in Sao Paulo">
 
-
-      <nav id="nav-bar" class="navigation">
-    <ul>
-        <li><a href="explore.html">Explore</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="feedback.html" target="_blank">Feedback</a></li>
-    </ul>
-</nav>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="feedback.html" target="_blank">Feedback</a></li>
+            </ul>
+        </nav>
 
         <section class="events">
             <div class="flex-container">
                 <button class="prev-button">←</button>
-                <div class="carousel-container">
-                    <div class="carousel-track">
-
-                        <div class="carousel-item">
-                            <div class="card">
+                <div class="container">
+                    <div class="track">
+                        <div class="item">
+                            <div class="card-event">
                                 <img src="https://mdn.github.io/shared-assets/images/examples/balloons1.jpg" alt="Red Balloon" />
                                 <h3>Beautiful Balloon</h3>
                                 <button class="learn-more">Learn More</button>
                             </div>
                         </div>
-
-                        <div class="carousel-item">
-                            <div class="card">
+                        <div class="item">
+                            <div class="card-event">
                                 <img src="https://mdn.github.io/shared-assets/images/examples/balloons2.jpg" alt="Colorful Balloons" />
                                 <h3>Colorful Balloons</h3>
                                 <button class="learn-more">Learn More</button>
                             </div>
                         </div>
-
-                        <div class="carousel-item">
-                            <div class="card">
+                        <div class="item">
+                            <div class="card-event">
                                 <img src="https://mdn.github.io/shared-assets/images/examples/balloons3.jpg" alt="Flying Balloon" />
                                 <h3>Flying High</h3>
                                 <button class="learn-more">Learn More</button>
                             </div>
                         </div>
-
-                        <div class="carousel-item">
-                            <div class="card">
+                        <div class="item">
+                            <div class="card-event">
                                 <img src="https://mdn.github.io/shared-assets/images/examples/balloons4.jpg" alt="Party Balloons" />
                                 <h3>Party Time</h3>
                                 <button class="learn-more">Learn More</button>
                             </div>
                         </div>
-
-                        <div class="carousel-item">
-                            <div class="card">
+                        <div class="item">
+                            <div class="card-event">
                                 <img src="https://mdn.github.io/shared-assets/images/examples/balloons5.jpg" alt="Sky Balloons" />
                                 <h3>Sky Dreams</h3>
                                 <button class="learn-more">Learn More</button>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <button class="next-button">→</button>
@@ -110,8 +98,8 @@
 
         <main>
 
-            <section class="card">
-                <h2>You can find here...</h2>
+            <h2>You can find here...</h2>
+            <section class="card" id="columns">
                 <div class="purpose">
                     <figure>
                         <img src="images/farolsantander.webp" id="farol" alt="Panoramic view of the Farol Santander building" loading="lazy">
@@ -119,10 +107,21 @@
                     </figure>
                     <p>
                         Hello, from São Paulo!<br><br>
-                        On this page, you'll find useful travel guides, restaurant recommendations, and detailed routes that will take you to the most iconic spots and hidden gems of each destination you must visit in this beatiful city.You'll also find information on safety tips and the best time to visit these places.<br><br>
+                        On this page, you'll find useful travel guides, restaurant recommendations, and detailed routes that will take you to the most iconic spots and hidden gems of each destination you must visit in this beatiful city. You'll also find information on safety tips and the best time to visit these places.<br><br>
                         Remember, you can leave comments or send us feedback. Let's explore!
                     </p>
                 </div>
+                <aside>
+                    <h3>Top Places in São Paulo...</h3>
+                    <div class="places">
+                        <ul>
+                            <li><a href="ibirapuera.html">Ibirapuera Park</a></li>
+                            <li><a href="masp.html">MASP</a></li>
+                            <li><a href="paulista.html">Paulista Avenue</a></li>
+                            <li><a href="explore.html">More places...</a></li>
+                        </ul>
+                    </div>
+                </aside>
             </section>
 
             <hr class="line">
@@ -133,26 +132,37 @@
                     <p>
                         Find the best places to enjoy the São Paulo Culinary in our top places for the month!
                     </p>
-
                 </div>
             </section>
         </main>
-        <aside>
-            <h3>Top Places in São Paulo...</h3>
-            <div class="places">
+
+    
+        <footer>
+            <div class="chamber-info">
+                <h4>Avenida Paulista Chamber of Commerce</h4>
                 <ul>
-                    <li><a href="ibirapuera.html">Ibirapuera Park</a></li>
-                    <li><a href="masp.html">MASP</a></li>
-                    <li><a href="paulista.html">Paulista Avenue</a></li>
-                    <li><a href="explore.html">More places...</a></li>
+                    <li>12345 Avenida Paulista</li>
+                    <li>Sao Paulo, Brazil 01234</li>
+                    <li>info@avenidapchamber.org</li>
+                    <li>(123) 555-222-111</li>
                 </ul>
             </div>
-
-        </aside>
-
-        <footer>
-            <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
-            <p id="p-color">Last modification: <span id="lastmodification"></span></p>
+            <div class="social-links">
+                <a href="https://github.com/AlexanderArj" target="_blank" rel="noopener noreferrer">
+                    <img src="images/github.svg" width="100" height="100" alt="Github author repositories">
+                </a>
+                <a href="https://www.facebook.com/alexander.romero.125323" target="_blank" rel="noopener noreferrer">
+                    <img src="images/facebook.svg" width="100" height="100" alt="Facebook profile">
+                </a>
+                <a href="https://www.linkedin.com/in/alexander-romero-9989b229b" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin.svg" width="100" height="100" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="copyright-modification">
+                <p>WDD 231 Class Project</p>
+                <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
+                <p id="p-color">Last modification: <span id="lastmodification"></span></p>
+            </div>
         </footer>
     </div>
 </body>
