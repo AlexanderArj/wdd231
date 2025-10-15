@@ -1,0 +1,364 @@
+
+body {
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+}
+
+.main {
+  width: 100%;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/* === FORMULARIO DE RESEÑA === */
+.review-form {
+  background-color: var(--bg-secondary);
+  padding: 25px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: var(--font-body);
+  color: var(--text-dark);
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.review-form select,
+.review-form textarea,
+.review-form input[type="text"],
+.review-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--accent-green);
+  border-radius: calc(var(--radius) / 2);
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.review-form select:focus,
+.review-form textarea:focus,
+.review-form input[type="text"]:focus,
+.review-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--accent-red);
+  box-shadow: 0 0 8px var(--accent-red);
+}
+
+.review-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* === CAMPOS OBLIGATORIOS Y OPCIONALES === */
+.required {
+  color: var(--accent-red);
+  font-weight: 700;
+}
+
+.optional {
+  font-size: 0.9em;
+  color: gray;
+}
+
+/* === ESTRELLAS DE CALIFICACIÓN === */
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin: 10px 0 20px;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: none;
+}
+
+.star-rating label::before {
+  content: "★";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  color: #ccc;
+  transition: color 0.2s ease-in-out;
+}
+
+.star-rating input:checked ~ label::before,
+.star-rating label:hover::before,
+.star-rating label:hover ~ label::before {
+  color: #f5c518;
+}
+
+/* === MENSAJES DE ERROR === */
+.error-message {
+  color: var(--accent-red);
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+/* === FIELDSET DE OPCIONES === */
+fieldset.tips {
+  border: 2px solid var(--accent-green);
+  border-radius: var(--radius);
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+fieldset.tips legend {
+  font-weight: 700;
+  font-family: var(--font-title);
+  color: var(--accent-green);
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+fieldset.tips label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+fieldset.tips input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: var(--accent-green);
+}
+
+/* === BOTÓN DE ENVÍO === */
+.review-form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--accent-green);
+  color: var(--text-white);
+  font-size: 1.1em;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.review-form input[type="submit"]:hover {
+  background-color: var(--green-hover);
+  transform: translateY(-2px);
+}
+
+/* === RESPONSIVE === */
+@media screen and (min-width: 700px) {
+  .review-form {
+    padding: 40px;
+  }
+
+  .star-rating label::before {
+    font-size: 35px;
+  }
+}
+
+
+
+/* --- Planes --- */
+#plans-container {
+  background-color: var(--bg-secondary);
+  padding: 20px;
+}
+
+.plans-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.plan-card {
+  background-color: var(--bg-main);
+  border-radius: var(--radius);
+  padding: var(--general-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: fade 0.8s ease forwards;
+}
+
+.plan-card:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.plan-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.plan-card:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.plan-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.plan-card:hover {
+  transform: scale(1.05);
+}
+
+.plan-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-green);
+  font-family: var(--font-title);
+}
+
+.plan-card p {
+  color: var(--text-dark);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.open-button {
+  background-color: var(--accent-green);
+  color: var(--text-white);
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.open-button:hover {
+  background-color: var(--green-hover);
+}
+
+/* --- Modal --- */
+dialog {
+  padding: var(--general-padding);
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  border-radius: var(--radius);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 500px;
+  border: none;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+#modal-content h3 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-title);
+}
+
+#modal-content .fee {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--accent-green);
+  margin-bottom: 1rem;
+}
+
+#modal-content hr {
+  margin: 1rem 0;
+}
+
+#modal-content .benefits-title {
+  margin-bottom: 1rem;
+}
+
+#modal-content ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+#modal-content li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+#modal-content li::before {
+  content: "✓";
+  color: var(--accent-green);
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+#close-modal-btn {
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: var(--accent-red);
+  color: var(--text-white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#close-modal-btn:hover {
+  background-color: #b71c1c;
+}
+
+/* --- Responsive --- */
+@media screen and (min-width: 700px) {
+  .main {
+    display: flex;
+  }
+
+  .plans-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .plan-card {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .plan-card {
+    width: calc(25% - 1rem);
+  }
+}

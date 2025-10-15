@@ -22,8 +22,9 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/galeria.css">
     <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/galeria.js" defer></script>
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/galeria.js" defer></script>
+    <script src="scripts/topplaces.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
 
@@ -39,16 +40,61 @@
             <p>Enjoy Sao Paulo, Brazil!</p>
         </header>
 
-        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
-        <img src="images/sampa-hero.png" id="hero-image" alt="A collage of places in Sao Paulo">
-
+        
         <nav id="nav-bar" class="navigation">
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="explore.html">Explore</a></li>
-                <li><a href="about.html">About Us</a></li>
                 <li><a href="feedback.html" target="_blank">Feedback</a></li>
             </ul>
         </nav>
+
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        <main>
+
+            <h2>You can find here...</h2>
+            <section class="card" id="columns">
+                <div class="purpose">
+                    <figure>
+                        <img src="images/farolsantander.webp" id="farol" alt="Panoramic view of the Farol Santander building" loading="lazy">
+                        <figcaption>Farol Santander</figcaption>
+                    </figure>
+                    <p>
+                        Hello, from São Paulo!<br><br>
+                        On this page, you'll find useful travel guides, restaurant recommendations, and detailed routes that will take you to the most iconic spots and hidden gems of each destination you must visit in this beatiful city. You'll also find information on safety tips and the best time to visit these places.<br><br>
+                        Remember, you can leave comments or send us feedback. Let's explore!
+                    </p>
+                </div>
+
+                <aside>
+                    <h3>Top Places in São Paulo...</h3>
+                    <div class="places-container"></div>
+                        <div id="plans-container" class="plans-grid"></div>
+                    </div>
+                    <dialog id="benefits-modal">
+                        <div id="modal-content"></div>
+                        <button id="close-modal-btn">Close</button>
+                    </dialog>
+                </aside>
+            </section>
+
+            <hr class="line">
+
+            <section class="card">
+                <h2>Best Local Food Places</h2>
+                <div class="food">
+                    <p>
+                        Find the best places to enjoy the São Paulo Culinary in our top places for the month!
+                    </p>
+                </div>
+            </section>
+        </main>
+
+                <img src="images/sampa-hero.png" id="hero-image" alt="A collage of places in Sao Paulo">
+
+
+        <!-- Galeria -->
+
 
         <section class="events">
             <div class="flex-container">
@@ -96,45 +142,7 @@
             </div>
         </section>
 
-        <main>
-
-            <h2>You can find here...</h2>
-            <section class="card" id="columns">
-                <div class="purpose">
-                    <figure>
-                        <img src="images/farolsantander.webp" id="farol" alt="Panoramic view of the Farol Santander building" loading="lazy">
-                        <figcaption>Farol Santander</figcaption>
-                    </figure>
-                    <p>
-                        Hello, from São Paulo!<br><br>
-                        On this page, you'll find useful travel guides, restaurant recommendations, and detailed routes that will take you to the most iconic spots and hidden gems of each destination you must visit in this beatiful city. You'll also find information on safety tips and the best time to visit these places.<br><br>
-                        Remember, you can leave comments or send us feedback. Let's explore!
-                    </p>
-                </div>
-                <aside>
-                    <h3>Top Places in São Paulo...</h3>
-                    <div class="places">
-                        <ul>
-                            <li><a href="ibirapuera.html">Ibirapuera Park</a></li>
-                            <li><a href="masp.html">MASP</a></li>
-                            <li><a href="paulista.html">Paulista Avenue</a></li>
-                            <li><a href="explore.html">More places...</a></li>
-                        </ul>
-                    </div>
-                </aside>
-            </section>
-
-            <hr class="line">
-
-            <section class="card">
-                <h2>Best Local Food Places</h2>
-                <div class="food">
-                    <p>
-                        Find the best places to enjoy the São Paulo Culinary in our top places for the month!
-                    </p>
-                </div>
-            </section>
-        </main>
+        <!-- Galeria -->
 
     
         <footer>

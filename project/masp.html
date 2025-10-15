@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampa Guide</title>
+    <meta name="description" content="Home Page - Tourist guide to the city of São Paulo, Brazil.">
+    <meta name="author" content="Alexander Romero">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Sampa Guide">
+    <meta property="og:description" content="Get to know Sao Paulo Brazil with us!">
+    <meta property="og:url" content="https://alexanderarj.github.io/wdd231/project/index.html">
+    <meta property="og:image" content="https://alexanderarj.github.io/wdd231/project/images/sampa-hero.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- <link rel="stylesheet" href="styles/place.css">  -->
+
+    <script src="scripts/nav.js" defer></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <figure>
+                <a href="index.html">
+                    <img src="images/logo.png" width="75" alt="Logo" loading="lazy">
+                </a>
+            </figure>
+            <h1 id="title">Sampa Guide</h1>
+            <p>Enjoy Sao Paulo, Brazil!</p>
+        </header>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="feedback.html" target="_blank">Feedback</a></li>
+            </ul>
+        </nav>
+
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+
+        <main>
+            <h2>MASP: Art and Architecture on Paulista Avenue</h2>
+            <section class="card" id="columns">
+                <div class="purpose">
+                    <figure>
+                        <img src="images/masp-exterior.webp" id="masp-main" alt="The iconic red building of MASP on Paulista Avenue" loading="lazy">
+                        <figcaption>MASP's famous "Vão Livre" (Free Span)</figcaption>
+                    </figure>
+                    <p>
+                        Welcome to MASP! <br><br>
+                        Suspended above Paulista Avenue by four massive red pillars, the Museu de Arte de São Paulo is as famous for its radical architecture as it is for its world-class art collection. Designed by Lina Bo Bardi, this institution is a landmark of modernism and a cultural heart of the city.<br><br>
+                        This guide will walk you through its incredible collection, from Renaissance masters to contemporary Brazilian artists, and explain the genius behind its unique exhibition design. Let's dive in!
+                    </p>
+                </div>
+                <aside>
+                    <h3>Don't Miss</h3>
+                    <ul>
+                        <li>The Crystal Easels</li>
+                        <li>The European Collection</li>
+                        <li>The View of 9 de Julho Avenue</li>
+                        <li>Brazilian Art Collection</li>
+                        <li>Temporary Exhibitions</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <hr class="line">
+
+            <section class="card">
+                <h2>The Revolutionary Crystal Easels</h2>
+                    <figure>
+                        <img src="images/masp-crystal-easels.webp" id="easels" alt="Artworks displayed on glass easels inside MASP" loading="lazy">
+                        <figcaption>Artworks floating on glass easels</figcaption>
+                    </figure>
+                    <p>
+                        One of MASP's most groundbreaking features is its exhibition design. Instead of placing art on walls, Lina Bo Bardi created <strong>"cavaletes de cristal" (crystal easels)</strong>. These glass and concrete stands arrange the artworks chronologically in an open floor plan, allowing visitors to create their own path through art history. This non-hierarchical display provides a unique, transparent, and immersive experience, challenging the traditional way of viewing art.
+                    </p>
+            </section>
+            
+            <hr class="line">
+
+            <section class="card">
+                <h2>A Collection Spanning Hemispheres</h2>
+                    <p>
+                        The museum holds the most important collection of European art in the Southern Hemisphere. You can stand face-to-face with masterpieces by artists like <strong>Rembrandt, Van Gogh, Monet, Renoir, Degas, and Picasso</strong>. Beyond the European masters, MASP has a formidable collection of Brazilian art, showcasing the country's artistic evolution from the colonial period to the present day. The collection also includes significant African and Asian art, offering a truly global perspective.
+                    </p>
+            </section>
+
+            <hr class="line">
+
+            <section class="card">
+                <h2>Visitor Information</h2>
+                    <p>
+                        <strong>Opening Hours:</strong> Tuesdays: 10 AM - 8 PM. Wednesday-Sunday: 10 AM - 6 PM. (Closed Mondays).<br>
+                        <strong>Entrance:</strong> Admission is charged, but entry is <strong>free for everyone on Tuesdays</strong>.<br>
+                        <strong>Getting There:</strong> The museum is located directly in front of the Trianon-MASP metro station (Line 2 - Green).<br>
+                        <strong>Pro Tip:</strong> Don't forget to check out the "Vão Livre," the 74-meter-long open plaza beneath the museum, which hosts antique fairs, protests, and public gatherings.
+                    </p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="chamber-info">
+                <h4>Avenida Paulista Chamber of Commerce</h4>
+                <ul>
+                    <li>12345 Avenida Paulista</li>
+                    <li>Sao Paulo, Brazil 01234</li>
+                    <li>info@avenidapchamber.org</li>
+                    <li>(123) 555-222-111</li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/AlexanderArj" target="_blank" rel="noopener noreferrer">
+                    <img src="images/github.svg" width="100" height="100" alt="Github author repositories">
+                </a>
+                <a href="https://www.facebook.com/alexander.romero.125323" target="_blank" rel="noopener noreferrer">
+                    <img src="images/facebook.svg" width="100" height="100" alt="Facebook profile">
+                </a>
+                <a href="https://www.linkedin.com/in/alexander-romero-9989b229b" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin.svg" width="100" height="100" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="copyright-modification">
+                <p>WDD 231 Class Project</p>
+                <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
+                <p id="p-color">Last modification: <span id="lastmodification"></span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

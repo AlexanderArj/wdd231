@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampa Guide</title>
+    <meta name="description" content="Home Page - Tourist guide to the city of São Paulo, Brazil.">
+    <meta name="author" content="Alexander Romero">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Sampa Guide">
+    <meta property="og:description" content="Get to know Sao Paulo Brazil with us!">
+    <meta property="og:url" content="https://alexanderarj.github.io/wdd231/project/index.html">
+    <meta property="og:image" content="https://alexanderarj.github.io/wdd231/project/images/sampa-hero.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/feedback.css">
+    <link rel="stylesheet" href="styles/base.css">
+    
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/feedback.js" defer></script>
+    <script src="scripts/feedback1.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <figure>
+            <a href="index.html">
+                <img src="images/logo.png" width="75" alt="Logo" loading="lazy">
+            </a>
+        </figure>
+        <h1 id="title">Sampa Guide</h1>
+        <p>Enjoy Sao Paulo, Brazil!</p>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="feedback.html" target="_blank">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+    
+    <main>
+        <h1>Plese send us your feedback</h1>
+        <section class="main">
+            <form class="review-form" method="get" action="localStorage.html">
+
+                <label>Overall Rating <span class="required">*</span></label>
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5">
+                    <label for="star-a"></label>
+
+                    <input type="radio" name="stars" id="star-b" value="4">
+                    <label for="star-b"></label>
+
+                    <input type="radio" name="stars" id="star-c" value="3">
+                    <label for="star-c"></label>
+
+                    <input type="radio" name="stars" id="star-d" value="2">
+                    <label for="star-d"></label>
+
+                    <input type="radio" name="stars" id="star-e" value="1">
+                    <label for="star-e"></label>
+                </div>
+                <div id="rating-message" class="error-message"></div>
+
+                <fieldset class="tips">
+                    <legend>
+                        What information did you find most useful?<br>
+                        <small>(Check all that apply)</small>
+                    </legend>
+                    <label for="weather">
+                        <input type="checkbox" id="weather" name="tips" value="weather">
+                        Information about the weather in the country
+                    </label>
+                    <label for="general">
+                        <input type="checkbox" id="general" name="tips" value="general">
+                        General information about the destination
+                    </label>
+                    <label for="bestTime">
+                        <input type="checkbox" id="bestTime" name="tips" value="bestTime">
+                        Best Time to travel
+                    </label>
+                    <label for="food">
+                        <input type="checkbox" id="food" name="tips" value="food">
+                        Food recommendations
+                    </label>
+                </fieldset>
+
+                <label for="review">How can we improve our content? <span class="optional">(Optional)</span></label>
+                <textarea id="review" name="review" rows="4"></textarea>
+
+                <label for="name">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="name" name="name">
+
+                <label>
+                    Email Address:
+                    <input type="email" name="email" title="Enter your email address." required autocomplete="email" placeholder="example@company.com">
+                </label>
+
+                <input type="submit" value="Post Review">
+
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="chamber-info">
+            <h4>Avenida Paulista Chamber of Commerce</h4>
+            <ul>
+                <li>12345 Avenida Paulista</li>
+                <li>Sao Paulo, Brazil 01234</li>
+                <li>info@avenidapchamber.org</li>
+                <li>(123) 555-222-111</li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/AlexanderArj" target="_blank" rel="noopener noreferrer">
+                <img src="images/github.svg" alt="Github author repositories">
+            </a>
+            <a href="https://www.facebook.com/alexander.romero.125323" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook.svg" alt="Facebook profile">
+            </a>
+            <a href="https://www.linkedin.com/in/alexander-romero-9989b229b" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="copyright-modification">
+            <p>WDD 231 Class Project</p>
+            <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
+            <p id="p-color">Last modification: <span id="lastmodification"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
