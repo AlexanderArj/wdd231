@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampa Guide</title>
+    <meta name="description" content="Home Page - Tourist guide to the city of São Paulo, Brazil.">
+    <meta name="author" content="Alexander Romero">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Sampa Guide">
+    <meta property="og:description" content="Get to know Sao Paulo Brazil with us!">
+    <meta property="og:url" content="https://alexanderarj.github.io/wdd231/project/index.html">
+    <meta property="og:image" content="https://alexanderarj.github.io/wdd231/project/images/sampa-hero.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/galeria.css">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/explore.css">
+
+
+
+    <script src="scripts/galeria.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/explore.js" type="module"></script>
+
+
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <figure>
+                <a href="index.html">
+                    <img src="images/logo.png" width="75" alt="Logo" loading="lazy">
+                </a>
+            </figure>
+            <h1 id="title">Sampa Guide</h1>
+            <p>Enjoy Sao Paulo, Brazil!</p>
+        </header>
+
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="feedback.html" target="_blank">Feedback</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Discover Amazing Places in São Paulo</h2>
+            <nav>
+                <ul>
+                    <li><a href="#" id="parks">Parks</a></li>
+                    <li><a href="#" id="restaurants">Restaurants</a></li>
+                    <li><a href="#" id="shopings">Shoppings</a></li>
+                    <li><a href="#" id="museums">Museums</a></li>
+                </ul>
+            </nav>
+
+            <div id="places-container"></div>
+            <hr class="line">
+        </main>
+
+        <footer>
+            <div class="chamber-info">
+                <h4>Avenida Paulista Chamber of Commerce</h4>
+                <ul>
+                    <li>12345 Avenida Paulista</li>
+                    <li>Sao Paulo, Brazil 01234</li>
+                    <li>info@avenidapchamber.org</li>
+                    <li>(123) 555-222-111</li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/AlexanderArj" target="_blank" rel="noopener noreferrer">
+                    <img src="images/github.svg" width="100" height="100" alt="Github author repositories">
+                </a>
+                <a href="https://www.facebook.com/alexander.romero.125323" target="_blank" rel="noopener noreferrer">
+                    <img src="images/facebook.svg" width="100" height="100" alt="Facebook profile">
+                </a>
+                <a href="https://www.linkedin.com/in/alexander-romero-9989b229b" target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkedin.svg" width="100" height="100" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="copyright-modification">
+                <p>WDD 231 Class Project</p>
+                <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
+                <p id="p-color">Last modification: <span id="lastmodification"></span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

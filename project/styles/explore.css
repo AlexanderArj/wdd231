@@ -1,0 +1,203 @@
+
+#places-container {
+    display: grid;
+    gap: 25px;
+    max-width: var(--max-width);
+    margin: auto;
+    min-height: 1500px;
+    padding: var(--general-padding);
+}
+
+section {
+    background-color: var(--bg-main);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 350px;
+    font-family: var(--font-body);
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--radius) var(--radius) 0 0;
+    min-height: 200px;
+}
+
+.text-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.text-content h3 {
+    font-family: var(--font-title);
+    font-size: 1.4rem;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.text-content .description {
+    font-size: 1rem;
+    color: #4b4f56;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+}
+
+.text-content .address {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #606770;
+}
+
+.text-content button {
+    background-color: var(--accent-green);
+    color: var(--text-white);
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-top: var(--margins);
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+    justify-self: center;
+    align-self: center;
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+.text-content button:hover {
+    background-color: var(--green-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-content button:active {
+    background-color: var(--accent-green);
+    transform: translateY(0);
+}
+
+
+@media (min-width: 320px) and (max-width: 640px) {
+    #places-container {
+        grid-template-columns: 1fr;
+    }
+
+    .text-content {
+        display: grid;
+        grid-template-areas:
+            "image"
+            "title"
+            "text"
+            "location";
+        gap: 10px;
+    }
+
+    .text-content img {
+        grid-area: image;
+    }
+
+    .text-content h3 {
+        grid-area: title;
+    }
+
+    .text-content .description {
+        grid-area: text;
+    }
+
+    .text-content .address {
+        grid-area: location;
+        align-self: end;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    #places-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-content {
+        display: grid;
+        height: 100%;
+        grid-template-areas:
+            "title text"
+            "image location"
+            "btn .";
+        grid-template-rows: 50px auto auto;
+        gap: 15px;
+    }
+
+    .text-content img {
+        grid-area: image;
+    }
+
+    .text-content h3 {
+        grid-area: title;
+        align-self: flex-start;
+    }
+
+    .text-content .description {
+        grid-area: text;
+    }
+
+    .text-content .address {
+        grid-area: location;
+        text-align: left;
+        align-self: center;
+    }
+
+    .text-content button {
+        grid-area: btn;
+    }
+}
+
+@media (min-width: 1025px) {
+    #places-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text-content {
+        display: grid;
+        height: 100%;
+        grid-template-areas:
+            "image title"
+            "image location"
+            "text link";
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 3fr 1fr;
+        gap: 10px 20px;
+    }
+
+    .text-content h3 {
+        grid-area: title;
+        align-self: center;
+    }
+
+    .description {
+        grid-area: text;
+    }
+
+    .address {
+        grid-area: location;
+        text-align: right;
+        font-size: 0.8rem;
+        align-self: center;
+    }
+
+    .text-content img {
+        grid-area: image;
+    }
+
+    .text-content button {
+        grid-area: link;
+    }
+}
