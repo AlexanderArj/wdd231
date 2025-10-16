@@ -107,7 +107,6 @@ section img {
 
 }
 
-/* === Modal principal === */
 #welcome-dialog {
   position: fixed;
   top: 50%;
@@ -124,21 +123,18 @@ section img {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.4s ease;
-  pointer-events: none; /* evita clics antes de aparecer */
+  pointer-events: none;
 }
 
-/* Cuando el dialog está abierto */
 #welcome-dialog[open] {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* === Contenedor interno === */
 .welcome-box {
   padding: 20px;
 }
 
-/* === Títulos y texto === */
 #welcome-dialog h2 {
   color: #333;
   font-size: 1.3rem;
@@ -151,7 +147,6 @@ section img {
   font-size: 1rem;
 }
 
-/* === Botón === */
 #welcome-dialog button {
   background-color: #ff5a5f;
   color: white;
@@ -166,12 +161,10 @@ section img {
   background-color: #e14e52;
 }
 
-/* === Fondo oscuro detrás del modal === */
 ::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* === Texto de información de visitas === */
 .visits-info {
   color: var(--text-white);
   font-size: 0.95rem;
