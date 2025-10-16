@@ -22,10 +22,12 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/galeria.css">
     <link rel="stylesheet" href="styles/base.css">
+
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/galeria.js" defer></script>
     <script src="scripts/topplaces.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/welcome.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 
 <body>
@@ -73,28 +75,25 @@
                     </div>
                     <dialog id="benefits-modal">
                         <div id="modal-content"></div>
-                        <button id="close-modal-btn">Close</button>
+                        <button id="close-modal-btn">x</button>
                     </dialog>
                 </aside>
             </section>
 
-            <hr class="line">
-
-            <section class="card">
-                <h2>Best Local Food Places</h2>
-                <div class="food">
-                    <p>
-                        Find the best places to enjoy the São Paulo Culinary in our top places for the month!
-                    </p>
+            <dialog id="welcome-dialog">
+                <div class="welcome-box">
+                    <h2>Welcome back to Sampa Guide!</h2>
+                    <p id="message"></p>
+                    <button id="close-dialog">Close</button>
                 </div>
-            </section>
+            </dialog>
+
+
         </main>
 
-                <img src="images/sampa-hero.png" id="hero-image" alt="A collage of places in Sao Paulo">
-
-
-        <!-- Galeria -->
-
+        <section class="hero">
+            <img src="images/sampa-hero.png" id="hero-image" alt="A collage of places in Sao Paulo">
+        </section>
 
         <section class="events">
             <div class="flex-container">
@@ -103,37 +102,44 @@
                     <div class="track">
                         <div class="item">
                             <div class="card-event">
-                                <img src="https://mdn.github.io/shared-assets/images/examples/balloons1.jpg" alt="Red Balloon" />
-                                <h3>Beautiful Balloon</h3>
-                                <button class="learn-more">Learn More</button>
+                                <img src="./images/batman.webp" alt="Beco do Batman Street" />
+                                <h3>Beco do Batman</h3>
                             </div>
                         </div>
                         <div class="item">
                             <div class="card-event">
-                                <img src="https://mdn.github.io/shared-assets/images/examples/balloons2.jpg" alt="Colorful Balloons" />
-                                <h3>Colorful Balloons</h3>
-                                <button class="learn-more">Learn More</button>
+                                <img src="./images/futbol.webp" alt="Football Museum" />
+                                <h3>Football Museum</h3>
                             </div>
                         </div>
                         <div class="item">
                             <div class="card-event">
-                                <img src="https://mdn.github.io/shared-assets/images/examples/balloons3.jpg" alt="Flying Balloon" />
-                                <h3>Flying High</h3>
-                                <button class="learn-more">Learn More</button>
+                                <img src="./images/mercado.webp" alt="Municipal Market of São Paulo" />
+                                <h3>Municipal Market of São Paulo</h3>
                             </div>
                         </div>
                         <div class="item">
                             <div class="card-event">
-                                <img src="https://mdn.github.io/shared-assets/images/examples/balloons4.jpg" alt="Party Balloons" />
-                                <h3>Party Time</h3>
-                                <button class="learn-more">Learn More</button>
+                                <img src="./images/liberdade.webp" alt="Liberdade Neighborhood" />
+                                <h3>Liberdade</h3>
                             </div>
                         </div>
                         <div class="item">
                             <div class="card-event">
-                                <img src="https://mdn.github.io/shared-assets/images/examples/balloons5.jpg" alt="Sky Balloons" />
-                                <h3>Sky Dreams</h3>
-                                <button class="learn-more">Learn More</button>
+                                <img src="./images/farolsantander.webp" alt="Farol Santander building" />
+                                <h3>Farol Santander</h3>
+                            </div>
+                        </div>
+                         <div class="item">
+                            <div class="card-event">
+                                <img src="./images/catedralse.webp" alt="São Paulo Cathedral" />
+                                <h3>São Paulo Cathedral</h3>
+                            </div>
+                        </div>
+                         <div class="item">
+                            <div class="card-event">
+                                <img src="./images/teatromunicipal.webp" alt="Theatro Municipal (São Paulo)" />
+                                <h3>Theatro Municipal</h3>
                             </div>
                         </div>
                     </div>
@@ -146,14 +152,14 @@
 
     
         <footer>
-            <div class="chamber-info">
-                <h4>Avenida Paulista Chamber of Commerce</h4>
+            <div class="sampa-info">
+                <h4>Sampa Guide</h4>
                 <ul>
-                    <li>12345 Avenida Paulista</li>
-                    <li>Sao Paulo, Brazil 01234</li>
-                    <li>info@avenidapchamber.org</li>
+                    <li>Sao Paulo, Brazil</li>
+                    <li>sampaguide.org</li>
                     <li>(123) 555-222-111</li>
                 </ul>
+                <p id="visit-counter" class="visits-info"></p>
             </div>
             <div class="social-links">
                 <a href="https://github.com/AlexanderArj" target="_blank" rel="noopener noreferrer">

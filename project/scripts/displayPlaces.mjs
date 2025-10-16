@@ -42,10 +42,11 @@ export function displayPlaces(places, selector) {
         // placeCard.appendChild(descriptionP);
         container.appendChild(descriptionP);
         container.appendChild(addressP);
+        container.appendChild(image);
+
         container.appendChild(btn);
         // placeCard.appendChild(websiteLink);
 
-        container.appendChild(image);
         placeCard.appendChild(container);
 
         containerTarget.appendChild(placeCard);

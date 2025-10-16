@@ -19,7 +19,6 @@ body {
   padding: 3rem 1rem;
 }
 
-/* === FORMULARIO DE RESEÑA === */
 .review-form {
   background-color: var(--bg-secondary);
   padding: 25px;
@@ -68,7 +67,6 @@ body {
   min-height: 100px;
 }
 
-/* === CAMPOS OBLIGATORIOS Y OPCIONALES === */
 .required {
   color: var(--accent-red);
   font-weight: 700;
@@ -79,7 +77,6 @@ body {
   color: gray;
 }
 
-/* === ESTRELLAS DE CALIFICACIÓN === */
 .star-rating {
   display: flex;
   flex-direction: row-reverse;
@@ -115,14 +112,12 @@ body {
   color: #f5c518;
 }
 
-/* === MENSAJES DE ERROR === */
 .error-message {
   color: var(--accent-red);
   font-size: 0.9em;
   margin-bottom: 10px;
 }
 
-/* === FIELDSET DE OPCIONES === */
 fieldset.tips {
   border: 2px solid var(--accent-green);
   border-radius: var(--radius);
@@ -149,7 +144,6 @@ fieldset.tips input[type="checkbox"] {
   accent-color: var(--accent-green);
 }
 
-/* === BOTÓN DE ENVÍO === */
 .review-form input[type="submit"] {
   width: 100%;
   padding: 12px;
@@ -168,7 +162,6 @@ fieldset.tips input[type="checkbox"] {
   transform: translateY(-2px);
 }
 
-/* === RESPONSIVE === */
 @media screen and (min-width: 700px) {
   .review-form {
     padding: 40px;
@@ -181,7 +174,6 @@ fieldset.tips input[type="checkbox"] {
 
 
 
-/* --- Planes --- */
 #plans-container {
   background-color: var(--bg-secondary);
   padding: 20px;
@@ -263,7 +255,6 @@ fieldset.tips input[type="checkbox"] {
   background-color: var(--green-hover);
 }
 
-/* --- Modal --- */
 dialog {
   padding: var(--general-padding);
   background-color: var(--bg-main);
@@ -340,7 +331,6 @@ dialog::backdrop {
   background-color: #b71c1c;
 }
 
-/* --- Responsive --- */
 @media screen and (min-width: 700px) {
   .main {
     display: flex;

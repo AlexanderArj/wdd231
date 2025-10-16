@@ -5,6 +5,10 @@
   gap: 10px;
 }
 
+.events {
+  margin-top: 50px;
+}
+
 .container {
   max-width: 900px;
   width: 90%;
@@ -88,8 +92,8 @@
 
 .prev-button:hover,
 .next-button:hover {
-  color: var(--green-hover, #007BFF);
-  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--text-white);
+  background-color: var(--accent-green);
 }
 
 @media (max-width: 768px) {

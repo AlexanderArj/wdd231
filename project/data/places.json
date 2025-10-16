@@ -4,7 +4,7 @@
             "name": "D.O.M.",
             "address": "R. Barão de Capanema, 549 - Jardins, São Paulo - SP",
             "description": "A fine dining restaurant by acclaimed chef Alex Atala, offering a tasting menu with Amazonian and Brazilian ingredients.",
-            "image": "./images/mercado.webp",
+            "image": "./images/dom.webp",
             "url": "http://domrestaurante.com.br/",
             "type": "R"
         },
@@ -12,17 +12,8 @@
             "name": "Maní",
             "address": "Rua Joaquim Antunes, 210 - Jardim Paulistano, São Paulo - SP",
             "description": "Led by chef Helena Rizzo, Maní offers contemporary and creative Brazilian cuisine in a charming setting.",
-            "image": "./images/mercado.webp",
+            "image": "./images/mani.webp",
             "url": "https://www.restaurantemani.com.br/",
-            "type": "R"
-
-        },
-        {
-            "name": "A Casa do Porco",
-            "address": "R. Araújo, 124 - República, São Paulo - SP",
-            "description": "./images/mercado.webp",
-            "image": "./images/mercado.webp",
-            "url": "https://acasadoporco.com.br/",
             "type": "R"
 
         },
@@ -30,7 +21,7 @@
             "name": "Fasano",
             "address": "Rua Vitório Fasano, 88 - Cerqueira César, São Paulo - SP",
             "description": "Located in the Fasano Hotel, it's an icon of classic and sophisticated Italian gastronomy in São Paulo.",
-            "image": "./images/mercado.webp",
+            "image": "./images/fasano.webp",
             "url": "https://www.fasano.com.br/en/gastronomia/trattoria/",
             "type": "R"
 
@@ -48,7 +39,7 @@
             "name": "Shopping Morumbi",
             "address": "Av. Roque Petroni Júnior, 1089 - Jardim das Acácias, São Paulo - SP",
             "description": "One of the largest and most complete shopping malls, with a wide variety of stores, restaurants, and entertainment.",
-            "image": "./images/mercado.webp",
+            "image": "./images/morumbi.webp",
             "url": "https://www.morumbishopping.com.br/",
             "type": "S"
 
@@ -57,7 +48,7 @@
             "name": "Shopping JK Iguatemi",
             "address": "Av. Pres. Juscelino Kubitschek, 2041 - Vila Olímpia, São Paulo - SP",
             "description": "A luxury shopping mall that hosts some of the world's most prestigious brands, with excellent restaurants and cinemas.",
-            "image": "./images/mercado.webp",
+            "image": "./images/iguatemi.webp",
             "url": "https://iguatemi.com.br/jkiguatemi/",
             "type": "S"
         },
@@ -65,16 +56,16 @@
             "name": "Shopping Cidade Jardim",
             "address": "Av. Magalhães de Castro, 12000 - Cidade Jardim, São Paulo - SP",
             "description": "Known for its open-air concept and beautiful gardens, it offers a luxury shopping experience with designer stores.",
-            "imageurl": "./images/mercado.webp",
+            "image": "./images/jardim.webp",
             "url": "https://cidadejardimshopping.com.br/",
             "type": "S"
 
         },
         {
-            "name": "Shopping Pátio Higienópolis",
+            "name": "Higienópolis",
             "address": "Av. Higienópolis, 618 - Higienópolis, São Paulo - SP",
-            "description": "Known for its architecture with a large glass dome. It offers a mix of shops, a cinema, a theater, and a varied food court.",
-            "image": "./images/mercado.webp",
+            "description": "Known for its architecture with a large glass dome. It offers a mix of shops, a cinema, a theater and more.",
+            "image": "./images/teatromunicipal.webp",
             "url": "https://iguatemi.com.br/patiohigienopolis",
             "type": "S"
 
@@ -83,7 +74,7 @@
             "name": "Shopping Eldorado",
             "address": "Av. Rebouças, 3970 - Pinheiros, São Paulo - SP",
             "description": "A traditional and popular mall with a wide range of stores for all budgets, a large food court, and cinemas.",
-            "image": "./images/mercado.webp",
+            "image": "./images/dorado.webp",
             "url": "https://www.shoppingeldorado.com.br/",
             "type": "S"
 
@@ -101,7 +92,7 @@
             "name": "Villa-Lobos Park",
             "address": "Av. Prof. Fonseca Rodrigues, 2001 - Alto de Pinheiros, São Paulo - SP",
             "description": "A large park with vast green areas, bike paths, sports courts, and spaces for concerts. Ideal for outdoor activities.",
-            "image": "./images/mercado.webp",
+            "image": "./images/villa.webp",
             "url": "https://parquevillalobos.com.br/",
             "type": "P"
 
@@ -110,7 +101,7 @@
             "name": "Independence Park",
             "address": "Av. Nazaré, s/n - Ipiranga, São Paulo - SP",
             "description": "A historic park where the Ipiranga Museum is located. It features beautiful French-style gardens and monuments.",
-            "image": "./images/mercado.webp",
+            "image": "./images/independencia.webp",
             "url": "https://prefeitura.sp.gov.br/web/meio_ambiente/w/parques/regiao_sul/5747",
             "type": "P"
 
@@ -119,7 +110,7 @@
             "name": "São Paulo Botanical Garden",
             "address": "Av. Miguel Estefno, 3031 - Vila Água Funda, São Paulo - SP",
             "description": "An oasis of tranquility with a great diversity of native Brazilian plants and trees. Ideal for walking and observing nature.",
-            "image": "./images/mercado.webp",
+            "image": "./images/botanico.webp",
             "url": "https://jardimbotanico.com.br/",
             "type": "P"
 
@@ -128,7 +119,7 @@
             "name": "Parque do Povo (People's Park)",
             "address": "Av. Henrique Chamma, 420 - Pinheiros, São Paulo - SP",
             "description": "A modern and well-maintained park with sports courts, playgrounds, and a large lawn for picnics and relaxation.",
-            "image": "./images/mercado.webp",
+            "image": "./images/povo.webp",
             "url": "https://www.parquedopovo.org/",
             "type": "P"
 
@@ -155,7 +146,7 @@
             "name": "Museum of Image and Sound (MIS)",
             "address": "Avenida Europa, 158 - Jardim Europa, São Paulo - SP",
             "description": "A dynamic cultural center that explores art through photography, cinema, video, and music, with innovative exhibitions.",
-            "image": "./images/mercado.webp",
+            "image": "./images/mis.webp",
             "url": "https://www.mis-sp.org.br/",
             "type": "M"
 
@@ -164,7 +155,7 @@
             "name": "Catavento Museum",
             "address": "Av. Mercúrio, s/n - Parque Dom Pedro II, Brás, São Paulo - SP",
             "description": "An interactive science and technology museum, ideal for curious children and adults, divided into Universe, Life, Ingenuity, and Society.",
-            "image": "./images/mercado.webp",
+            "image": "./images/catavento.webp",
             "url": "https://museucatavento.org.br/",
             "type": "M"
 

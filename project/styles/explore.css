@@ -1,41 +1,58 @@
-
-#places-container {
-    display: grid;
-    gap: 25px;
-    max-width: var(--max-width);
-    margin: auto;
-    min-height: 1500px;
+main nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--bg-main);
+    border-radius: var(--radius);
     padding: var(--general-padding);
 }
 
-section {
-    background-color: var(--bg-main);
+main nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: var(--general-padding);
     border-radius: var(--radius);
+    color: var(--text-dark);
+}
+
+main nav ul li a:hover {
+    background-color:var(--accent-green);
+    color: var(--text-white);
+    font-weight: bold;
+}
+
+#places-container {
+    padding: var(--general-padding);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    min-height: 400px;
+}
+
+section {
+    background-color: var(--bg-secondary);
+    padding: var(--general-padding);
+    border-radius: var(--radius);
+    text-align: center;
     box-shadow: var(--shadow);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 350px;
-    font-family: var(--font-body);
 }
 
 section:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 section img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    object-fit: cover;
-    border-radius: var(--radius) var(--radius) 0 0;
-    min-height: 200px;
+    border-radius: var(--radius);
+    margin-top: var(--margins);
 }
 
 .text-content {
     padding: 20px;
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .text-content h3 {
@@ -60,10 +77,9 @@ section img {
 
 .text-content button {
     background-color: var(--accent-green);
-    color: var(--text-white);
     text-transform: uppercase;
     padding: 10px 20px;
-    margin-top: var(--margins);
+    margin-top: 15px;
     border: none;
     border-radius: var(--radius);
     cursor: pointer;
@@ -85,119 +101,9 @@ section img {
     transform: translateY(0);
 }
 
+.text-content button a {
+    text-decoration: none;
+    color: var(--text-white);
 
-@media (min-width: 320px) and (max-width: 640px) {
-    #places-container {
-        grid-template-columns: 1fr;
-    }
-
-    .text-content {
-        display: grid;
-        grid-template-areas:
-            "image"
-            "title"
-            "text"
-            "location";
-        gap: 10px;
-    }
-
-    .text-content img {
-        grid-area: image;
-    }
-
-    .text-content h3 {
-        grid-area: title;
-    }
-
-    .text-content .description {
-        grid-area: text;
-    }
-
-    .text-content .address {
-        grid-area: location;
-        align-self: end;
-    }
 }
 
-@media (min-width: 641px) and (max-width: 1024px) {
-    #places-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .text-content {
-        display: grid;
-        height: 100%;
-        grid-template-areas:
-            "title text"
-            "image location"
-            "btn .";
-        grid-template-rows: 50px auto auto;
-        gap: 15px;
-    }
-
-    .text-content img {
-        grid-area: image;
-    }
-
-    .text-content h3 {
-        grid-area: title;
-        align-self: flex-start;
-    }
-
-    .text-content .description {
-        grid-area: text;
-    }
-
-    .text-content .address {
-        grid-area: location;
-        text-align: left;
-        align-self: center;
-    }
-
-    .text-content button {
-        grid-area: btn;
-    }
-}
-
-@media (min-width: 1025px) {
-    #places-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .text-content {
-        display: grid;
-        height: 100%;
-        grid-template-areas:
-            "image title"
-            "image location"
-            "text link";
-        grid-template-rows: auto 1fr;
-        grid-template-columns: 3fr 1fr;
-        gap: 10px 20px;
-    }
-
-    .text-content h3 {
-        grid-area: title;
-        align-self: center;
-    }
-
-    .description {
-        grid-area: text;
-    }
-
-    .address {
-        grid-area: location;
-        text-align: right;
-        font-size: 0.8rem;
-        align-self: center;
-    }
-
-    .text-content img {
-        grid-area: image;
-    }
-
-    .text-content button {
-        grid-area: link;
-    }
-}

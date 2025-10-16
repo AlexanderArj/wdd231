@@ -21,9 +21,11 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <!-- <link rel="stylesheet" href="styles/place.css">  -->
+    <link rel="stylesheet" href="styles/place.css"> 
 
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
 </head>
 
 <body>
@@ -41,7 +43,7 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="explore.html">Explore</    a></li>
+                <li><a href="explore.html">Explore</a></li>
                 <li><a href="feedback.html" target="_blank">Feedback</a></li>
             </ul>
         </nav>
@@ -54,7 +56,7 @@
             <section class="card" id="columns">
                 <div class="purpose">
                     <figure>
-                        <img src="images/ibirapuera-lake.webp" id="ibirapuera-main" alt="Panoramic view of the lake at Ibirapuera Park" loading="lazy">
+                        <img src="images/ibipark.webp" alt="Panoramic view of the lake at Ibirapuera Park" loading="lazy">
                         <figcaption>Ibirapuera Park Lake & Auditorium</figcaption>
                     </figure>
                     <p>
@@ -72,6 +74,17 @@
                         <li>Ibirapuera Auditorium</li>
                         <li>The Planetarium</li>
                     </ul>
+
+                    <div class="weather">
+                        <img id="graphic" src="images/cloud-sun.svg" alt="Weather Icon">
+                        <ul>
+                            <li id="temperature"></li>
+                            <li id="description"></li>
+                            <li id="tomorrow"></li>
+                            <li id="after-tomorrow"></li>
+                        </ul>
+                    </div>
+
                 </aside>
             </section>
 
@@ -80,7 +93,7 @@
             <section class="card">
                 <h2>Culture and Architecture</h2>
                     <figure>
-                        <img src="images/ibirapuera-oca.webp" id="oca" alt="The Oca exhibition building in Ibirapuera Park" loading="lazy">
+                        <img src="images/oca.webp" id="oca" alt="The Oca exhibition building in Ibirapuera Park" loading="lazy">
                         <figcaption>The Oca, designed by Oscar Niemeyer</figcaption>
                     </figure>
                     <p>
@@ -111,12 +124,11 @@
         </main>
 
         <footer>
-            <div class="chamber-info">
-                <h4>Avenida Paulista Chamber of Commerce</h4>
+            <div class="sampa-info">
+                <h4>Sampa Guide</h4>
                 <ul>
-                    <li>12345 Avenida Paulista</li>
-                    <li>Sao Paulo, Brazil 01234</li>
-                    <li>info@avenidapchamber.org</li>
+                    <li>Sao Paulo, Brazil</li>
+                    <li>sampaguide.org</li>
                     <li>(123) 555-222-111</li>
                 </ul>
             </div>

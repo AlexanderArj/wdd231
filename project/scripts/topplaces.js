@@ -15,13 +15,13 @@ const topPlaces = [
   {
     title: "Paulista Avenue",
     description: "One of the most iconic avenues in São Paulo, full of cultural centers, restaurants, and skyscrapers.",
-    image: "./images/paulista.webp",
+    image: "./images/avenidap.webp",
     url: "./paulista.html"
   },
   {
     title: "MASP",
     description:"One of the most important museums in Latin America, with an impressive collection of European and Brazilian art.",
-    image: "./images/webp",
+    image: "./images/masp.webp",
     url: "./masp.html"
   }
 ];

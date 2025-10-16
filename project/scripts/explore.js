@@ -7,16 +7,12 @@ async function explore() {
 
     const places = await getData();
 
-    // Mostrar todos los lugares al cargar la página
-
-    // Función auxiliar para filtrar y mostrar
     function filterAndDisplay(typeCode) {
-        sections.innerHTML = ''; // Limpia el contenedor antes de mostrar nuevos resultados
+        sections.innerHTML = ''; 
         const filtered = places.filter(place => place.type === typeCode);
         displayPlaces(filtered, '#places-container');
     }
 
-    // Añadir event listeners a cada enlace del menú
     document.querySelector('#parks').addEventListener('click', (e) => {
         e.preventDefault();
         filterAndDisplay('P');

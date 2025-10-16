@@ -21,9 +21,11 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <!-- <link rel="stylesheet" href="styles/place.css">  -->
+    <link rel="stylesheet" href="styles/place.css"> 
 
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
 </head>
 
 <body>
@@ -53,7 +55,7 @@
             <section class="card" id="columns">
                 <div class="purpose">
                     <figure>
-                        <img src="images/masp-exterior.webp" id="masp-main" alt="The iconic red building of MASP on Paulista Avenue" loading="lazy">
+                        <img src="images/masp.webp" alt="The iconic red building of MASP on Paulista Avenue" loading="lazy">
                         <figcaption>MASP's famous "Vão Livre" (Free Span)</figcaption>
                     </figure>
                     <p>
@@ -71,6 +73,16 @@
                         <li>Brazilian Art Collection</li>
                         <li>Temporary Exhibitions</li>
                     </ul>
+
+                    <div class="weather">
+                        <img id="graphic" src="images/cloud-sun.svg" alt="Weather Icon">
+                        <ul>
+                            <li id="temperature"></li>
+                            <li id="description"></li>
+                            <li id="tomorrow"></li>
+                            <li id="after-tomorrow"></li>
+                        </ul>
+                    </div>
                 </aside>
             </section>
 
@@ -79,7 +91,7 @@
             <section class="card">
                 <h2>The Revolutionary Crystal Easels</h2>
                     <figure>
-                        <img src="images/masp-crystal-easels.webp" id="easels" alt="Artworks displayed on glass easels inside MASP" loading="lazy">
+                        <img src="images/cristal.webp" id="oca" alt="Artworks displayed on glass easels inside MASP" loading="lazy">
                         <figcaption>Artworks floating on glass easels</figcaption>
                     </figure>
                     <p>
@@ -110,12 +122,11 @@
         </main>
 
         <footer>
-            <div class="chamber-info">
-                <h4>Avenida Paulista Chamber of Commerce</h4>
+            <div class="sampa-info">
+                <h4>Sampa Guide</h4>
                 <ul>
-                    <li>12345 Avenida Paulista</li>
-                    <li>Sao Paulo, Brazil 01234</li>
-                    <li>info@avenidapchamber.org</li>
+                    <li>Sao Paulo, Brazil</li>
+                    <li>sampaguide.org</li>
                     <li>(123) 555-222-111</li>
                 </ul>
             </div>
