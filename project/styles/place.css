@@ -24,4 +24,6 @@
 #oca {
     border-radius: var(--radius);
     margin: 10px 0 15px 2px;
+    width: 300px;
+    height: 200px;
 }
