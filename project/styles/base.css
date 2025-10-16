@@ -250,6 +250,26 @@ footer {
   text-align: center;
 }
 
+.sampa-info {
+  background-color: var(--green-hover);
+  padding: 20px;
+}
+
+.sampa-info ul {
+  list-style: none;
+}
+
+.sampa-info a{
+  text-decoration: none;
+  color: var(--text-white);
+}
+
+.sampa-info a:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
 .sampa-info,
 .copyright-modification {
   line-height: 1.5;

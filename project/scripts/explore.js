@@ -14,7 +14,7 @@ async function explore() {
     }
 
     document.querySelector('#parks').addEventListener('click', (e) => {
-        e.preventDefault();
+        e.preventDefault(); 
         filterAndDisplay('P');
     });
 
