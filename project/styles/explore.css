@@ -107,3 +107,77 @@ section img {
 
 }
 
+/* === Modal principal === */
+#welcome-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border: none;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  max-width: 400px;
+  width: 85%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none; /* evita clics antes de aparecer */
+}
+
+/* Cuando el dialog está abierto */
+#welcome-dialog[open] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* === Contenedor interno === */
+.welcome-box {
+  padding: 20px;
+}
+
+/* === Títulos y texto === */
+#welcome-dialog h2 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+#welcome-dialog p {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* === Botón === */
+#welcome-dialog button {
+  background-color: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#welcome-dialog button:hover {
+  background-color: #e14e52;
+}
+
+/* === Fondo oscuro detrás del modal === */
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* === Texto de información de visitas === */
+.visits-info {
+  color: var(--text-white);
+  font-size: 0.95rem;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+
+

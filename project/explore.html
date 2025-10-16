@@ -26,8 +26,7 @@
     <link rel="stylesheet" href="styles/explore.css">
 
 
-
-    <script src="scripts/galeria.js" defer></script>
+    <script src="scripts/welcome.js" defer></script>
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/explore.js" type="module"></script>
 
@@ -69,6 +68,16 @@
 
             <div id="places-container"></div>
             <hr class="line">
+
+            
+            <dialog id="welcome-dialog">
+                <div class="welcome-box">
+                    <h2>Welcome back to Sampa Guide!</h2>
+                    <p id="message"></p>
+                    <button id="close-dialog">Close</button>
+                </div>
+            </dialog>
+
         </main>
 
         <footer>
@@ -79,6 +88,8 @@
                     <li>sampaguide.org</li>
                     <li>(123) 555-222-111</li>
                 </ul>
+                <p id="visit-counter" class="visits-info"></p>
+
             </div>
             <div class="social-links">
                 <a href="https://github.com/AlexanderArj" target="_blank" rel="noopener noreferrer">
